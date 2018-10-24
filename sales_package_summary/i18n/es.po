@@ -1,0 +1,142 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* sales_package_summary
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-26 14:06+0000\n"
+"PO-Revision-Date: 2018-10-26 14:06+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sales_package_summary
+#: model:ir.ui.view,arch_db:sales_package_summary.sale_summary_form
+msgid "<span> cm3</span>"
+msgstr "<span> cm3</span>"
+
+#. module: sales_package_summary
+#: model:ir.ui.view,arch_db:sales_package_summary.sale_summary_form
+msgid "<span> kg</span>"
+msgstr "<span> kg</span>"
+
+#. module: sales_package_summary
+#: model:ir.ui.view,arch_db:sales_package_summary.product_normal_form_view_dimension
+#: model:ir.ui.view,arch_db:sales_package_summary.product_template_common_form_view_dimension
+msgid "<span>cm</span>"
+msgstr "<span>cm</span>"
+
+#. module: sales_package_summary
+#: model:ir.ui.view,arch_db:sales_package_summary.product_normal_form_view_dimension
+#: model:ir.ui.view,arch_db:sales_package_summary.product_template_common_form_view_dimension
+msgid "<span>kg</span>"
+msgstr "<span>kg</span>"
+
+#. module: sales_package_summary
+#: model:ir.ui.view,arch_db:sales_package_summary.product_normal_form_view_dimension
+#: model:ir.ui.view,arch_db:sales_package_summary.product_template_common_form_view_dimension
+msgid "Dimensions"
+msgstr "Dimensions"
+
+#. module: sales_package_summary
+#: model:ir.model.fields,field_description:sales_package_summary.field_product_product_height
+#: model:ir.model.fields,field_description:sales_package_summary.field_product_template_height
+msgid "Height"
+msgstr "Altura"
+
+#. module: sales_package_summary
+#: model:ir.model.fields,help:sales_package_summary.field_product_template_height
+msgid "Height of product in cm"
+msgstr "Altura de un producto en cm"
+
+#. module: sales_package_summary
+#: model:ir.model.fields,field_description:sales_package_summary.field_product_product_length
+#: model:ir.model.fields,field_description:sales_package_summary.field_product_template_length
+msgid "Length"
+msgstr "Largo"
+
+#. module: sales_package_summary
+#: model:ir.model.fields,help:sales_package_summary.field_product_template_length
+msgid "Length of product in cm"
+msgstr "El largo de un producto en cm"
+
+#. module: sales_package_summary
+#: model:ir.model,name:sales_package_summary.model_product_product
+msgid "Product"
+msgstr "Producto"
+
+#. module: sales_package_summary
+#: model:ir.model,name:sales_package_summary.model_product_template
+msgid "Product Template"
+msgstr "Plantilla producto"
+
+#. module: sales_package_summary
+#: model:ir.model,name:sales_package_summary.model_sale_order
+msgid "Quotation"
+msgstr "Cotización"
+
+#. module: sales_package_summary
+#: model:ir.model,name:sales_package_summary.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de pedido de venta"
+
+#. module: sales_package_summary
+#: model:ir.model.fields,help:sales_package_summary.field_sale_order_line_weight
+msgid "The weight of the contents in Kg, not including any packaging, etc."
+msgstr "El peso del contenido en Kg, sin incluir empaquetado, etc..."
+
+#. module: sales_package_summary
+#: model:ir.model.fields,field_description:sales_package_summary.field_sale_order_total_volumen
+msgid "Total Volumen(cm3)"
+msgstr "Total Volumen(cm3)"
+
+#. module: sales_package_summary
+#: model:ir.ui.view,arch_db:sales_package_summary.sale_summary_form
+msgid "Total Volumen:"
+msgstr "Volumen Total(cm3):"
+
+#. module: sales_package_summary
+#: model:ir.model.fields,field_description:sales_package_summary.field_sale_order_total_weight
+msgid "Total Weight(kg)"
+msgstr "Peso Total(kg)"
+
+#. module: sales_package_summary
+#: model:ir.ui.view,arch_db:sales_package_summary.sale_summary_form
+msgid "Total Weight:"
+msgstr "Peso Total:"
+
+#. module: sales_package_summary
+#: model:ir.model.fields,field_description:sales_package_summary.field_sale_order_line_volumen
+msgid "Volumen(cm3)"
+msgstr "Volumen(cm3)"
+
+#. module: sales_package_summary
+#: model:ir.model.fields,field_description:sales_package_summary.field_sale_order_line_weight
+msgid "Weight(kg)"
+msgstr "Peso(kg)"
+
+#. module: sales_package_summary
+#: model:ir.model.fields,field_description:sales_package_summary.field_product_product_width
+#: model:ir.model.fields,field_description:sales_package_summary.field_product_template_width
+msgid "Width"
+msgstr "Ancho"
+
+#. module: sales_package_summary
+#: model:ir.model.fields,help:sales_package_summary.field_product_template_width
+msgid "Width of product in cm"
+msgstr "El ancho de un producto en cm"
+
+#. module: sales_package_summary
+#: model:ir.ui.view,arch_db:sales_package_summary.sale_summary_form
+msgid "You can not calculate the <strong>total volumen</strong> because a <strong>dimension product</strong> no was set"
+msgstr "No se puede calcular el <strong>volumen total</strong> porque <strong>las dimensiones de algunos productos no han sido establecidas</strong>"
+
+#. module: sales_package_summary
+#: model:ir.ui.view,arch_db:sales_package_summary.sale_summary_form
+msgid "You can not calculate the <strong>total weight</strong> because a <strong>product weight</strong> no was set"
+msgstr "No se puede calcular el <strong>peso total</strong> porque <strong>el peso de algunos productos no ha sido establecido</strong>"

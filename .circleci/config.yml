@@ -1,0 +1,51 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/addons
+
+    docker:
+
+    # Primary container image where all commands run
+
+      - image: antilhuecom/odoo-base
+        environment:
+          DB_HOST: 127.0.0.1
+          DATABASE: odoo
+          USER: odoo
+          ODOO_ENVIROMENT: CI
+    # Service container image available at `host: localhost`
+
+      - image: circleci/postgres:9.6.2
+        environment:
+          POSTGRES_USER: odoo
+          POSTGRES_DB: odoo
+
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: |
+            apt-get update
+            apt-get install wget
+            wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
+            tar -C /usr/local/bin -xzvf dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
+            rm dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
+          environment:
+            DOCKERIZE_VERSION: v0.3.0
+      - run:
+          name: Wait for db
+          command: dockerize -wait tcp://localhost:5432 -timeout 1m
+      - run:
+          name: Install odoo
+          command: |
+            . /virtualenv/python3.5/bin/activate
+            python /Odoo11/odoo-bin -d odoo --db_host $DB_HOST -r $USER --stop-after-init
+      - run:
+          name: Install modules antilhue and Run test
+          command: |
+            . /virtualenv/python3.5/bin/activate
+            python /Odoo11/odoo-bin -d odoo --db_host $DB_HOST -r $USER --addons-path=$ADDONS_PATH -i  $MODULE_TEST --test-enable --log-level=test --stop-after-init
+          # python /Odoo11/odoo-bin -d odoo --db_host $DB_HOST -r $USER --addons-path=$ADDONS_PATH -u antilhue --log-level=test --test-enable --stop-after-init
+          environment:
+            ADDONS_PATH: "/Odoo11/odoo/addons,/Odoo11/addons,~/addons"
+            MODULE_TEST: "sales_package_summary"

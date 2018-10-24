@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record model="ir.ui.view" id="sale_summary_form">
+		<field name="name">sale.summary.form</field>
+		<field name="model">sale.order</field>
+		<field name="inherit_id" ref="sale.view_order_form"/>
+		<field name="arch" type="xml">
+			<xpath expr="//field[@name='order_line']" position="after">
+				<div attrs="{'invisible': [('total_weight', '&lt;', 0)]}">
+					<label for="total_weight" name="total_weight" string="Total Weight: " class="oe_inline"/>
+					<field name="total_weight" class="oe_inline"/><span> kg</span>
+				</div>
+				<div attrs="{'invisible': [('total_volumen', '&lt;', 0)]}">
+					<label for="total_volumen" name="total_volumen" string="Total Volumen: " class="oe_inline"/>
+					<field name="total_volumen" class="oe_inline"/><span> cm3</span>
+				</div>
+				<div attrs="{'invisible': ['|', ('total_weight', '>=', 0), ('amount_untaxed','=', 0)]}" class="alert"
+					 style="margin-bottom: 3px;color: #8a6d3b;background-color: #fcf8e3;border-color: #faebcc;padding: 5px;">
+					You can not calculate the <strong>total weight</strong> because a <strong>product weight</strong> no was set
+				</div>
+				<div attrs="{'invisible': ['|', ('total_volumen', '>=', 0), ('amount_untaxed','=', 0)]}" class="alert"
+					 style="margin-bottom: 3px;color:#31708f;background-color:#d9edf7;border-color:#bce8f1;padding: 5px;">
+					You can not calculate the <strong>total volumen</strong> because a <strong>dimension product</strong> no was set
+				</div>
+				<newline/>
+			</xpath>
+            <xpath expr="//field[@name='order_line']/tree/field[@name='product_uom']" position="after">
+				<field name="weight"/>
+			</xpath>
+			<xpath expr="//field[@name='order_line']/form/group/group/field[@name='price_unit']" position="before">
+				<field name="weight"/>
+			</xpath>
+		</field>
+	</record>
+</odoo>
