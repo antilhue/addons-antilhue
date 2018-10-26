@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Form View  Product.template  -->
+    <record id="product_template_common_form_view_dimension" model="ir.ui.view">
+        <field name="name">product.template.common.form.view.dimension</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <page name="general_information" position="inside">
+                <group name="dimensions" string="Dimensions"  attrs="{'invisible': [('product_variant_count', '&gt;', 1)]}">
+                    <group>
+                        <label for="length"/>
+                        <div class="o_row" name="length">
+                            <field name="length" attrs="{'readonly':[('type','=','service')]}"/>
+                            <span>cm</span>
+                        </div>
+                        <label for="height"/>
+                        <div class="o_row" name="height">
+                            <field name="height" attrs="{'readonly':[('type','=','service')]}"/>
+                            <span>cm</span>
+                        </div>
+                    </group>
+                    <group>
+                        <label for="width"/>
+                        <div class="o_row" name="width">
+                            <field name="width" attrs="{'readonly':[('type','=','service')]}"/>
+                            <span>cm</span>
+                        </div>
+                        <label for="weight"/>
+                        <div class="o_row" name="weight">
+                            <field name="weight" attrs="{'readonly':[('type','=','service')]}"/>
+                            <span>kg</span>
+                        </div>
+                    </group>
+                </group>
+            </page>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="product_normal_form_view_dimension">
+        <field name="name">product_normal_form_view_dimension</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <page name="general_information" position="inside">
+                <group name="dimensions" string="Dimensions">
+                    <group>
+                        <label for="length"/>
+                        <div class="o_row" name="length">
+                            <field name="length" attrs="{'readonly':[('type','=','service')]}"/>
+                            <span>cm</span>
+                        </div>
+                        <label for="height"/>
+                        <div class="o_row" name="height">
+                            <field name="height" attrs="{'readonly':[('type','=','service')]}"/>
+                            <span>cm</span>
+                        </div>
+                    </group>
+                    <group>
+                        <label for="width"/>
+                        <div class="o_row" name="width">
+                            <field name="width" attrs="{'readonly':[('type','=','service')]}"/>
+                            <span>cm</span>
+                        </div>
+                        <label for="weight"/>
+                        <div class="o_row" name="weight">
+                            <field name="weight" attrs="{'readonly':[('type','=','service')]}"/>
+                            <span>kg</span>
+                        </div>
+                    </group>
+                </group>
+            </page>
+        </field>
+     </record>
+</odoo>
