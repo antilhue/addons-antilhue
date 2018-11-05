@@ -12,7 +12,7 @@
 				</div>
 				<div attrs="{'invisible': [('total_volumen', '&lt;', 0)]}">
 					<label for="total_volumen" name="total_volumen" string="Total Volumen: " class="oe_inline"/>
-					<field name="total_volumen" class="oe_inline"/><span> cm3</span>
+					<field name="total_volumen" class="oe_inline"/><span> m3</span>
 				</div>
 				<div attrs="{'invisible': ['|', ('total_weight', '>=', 0), ('amount_untaxed','=', 0)]}" class="alert"
 					 style="margin-bottom: 3px;color: #8a6d3b;background-color: #fcf8e3;border-color: #faebcc;padding: 5px;">

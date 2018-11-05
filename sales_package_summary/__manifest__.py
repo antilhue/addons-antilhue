@@ -8,6 +8,7 @@
         'sale_management',
     ],
     'data': [
+        'data/decimal_precision.xml',
         'views/product_view.xml',
         'views/sales_order_view.xml',
     ],

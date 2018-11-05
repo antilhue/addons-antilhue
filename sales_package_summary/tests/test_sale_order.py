@@ -25,12 +25,12 @@ class TestSaleOrder(TransactionCase):
         # Add product with all dimensions
         self.create_order_line(sale_order, self.product_lapto)
         self.assertEquals(round(sale_order.total_weight, 2), 0.50, "The total weight not was correctly compute")
-        self.assertEquals(round(sale_order.total_volumen, 2), 125.00, "The total volumen not was correctly compute")
+        self.assertEquals(round(sale_order.total_volumen, 6), 0.000125, "The total volumen not was correctly compute")
         # Increase the quantity of products and add s product of type = service
         sale_order.order_line.product_uom_qty = 5
         self.create_order_line(sale_order, self.product_service)
         self.assertEquals(round(sale_order.total_weight, 2), 0.50 * 5, "The total weight not was correctly compute")
-        self.assertEquals(round(sale_order.total_volumen, 2), 125.00 * 5, "The total volumen not was correctly compute")
+        self.assertEquals(round(sale_order.total_volumen, 6), 0.000125 * 5, "The total volumen not was correctly compute")
         # Add a product without dimensions
         line = self.create_order_line(sale_order, self.product_imac)
         self.assertEquals(round(sale_order.total_weight, 2), -1, "The total weight not was correctly compute")
@@ -38,7 +38,7 @@ class TestSaleOrder(TransactionCase):
         # Line qty=0
         line.product_uom_qty = 0
         self.assertEquals(round(sale_order.total_weight, 2), 0.50 * 5, "The total weight wrong, qty=0")
-        self.assertEquals(round(sale_order.total_volumen, 2), 125.00 * 5, "The total volumen wrong, qty=0")
+        self.assertEquals(round(sale_order.total_volumen, 6), 0.000125 * 5, "The total volumen wrong, qty=0")
 
     def create_order_line(self, order, product):
         return self.order_line_obj.create({

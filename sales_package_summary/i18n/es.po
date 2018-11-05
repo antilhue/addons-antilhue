@@ -92,13 +92,13 @@ msgstr "El peso del contenido en Kg, sin incluir empaquetado, etc..."
 
 #. module: sales_package_summary
 #: model:ir.model.fields,field_description:sales_package_summary.field_sale_order_total_volumen
-msgid "Total Volumen(cm3)"
-msgstr "Total Volumen(cm3)"
+msgid "Total Volumen"
+msgstr "Volumen Total"
 
 #. module: sales_package_summary
 #: model:ir.ui.view,arch_db:sales_package_summary.sale_summary_form
 msgid "Total Volumen:"
-msgstr "Volumen Total(cm3):"
+msgstr "Volumen Total:"
 
 #. module: sales_package_summary
 #: model:ir.model.fields,field_description:sales_package_summary.field_sale_order_total_weight

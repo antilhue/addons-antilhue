@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 from odoo import api, fields, models, _
+from odoo.addons import decimal_precision as dp
 
 
 class SaleOrder(models.Model):
     _inherit = "sale.order"
 
     total_weight = fields.Float(string='Total Weight(kg)', compute='_compute_total_weight')
-    total_volumen = fields.Float(string='Total Volumen(cm3)', compute='_compute_total_volumen')
+    total_volumen = fields.Float(string='Total Volumen', compute='_compute_total_volumen',
+                                 digits=dp.get_precision('Volumen'))
 
     @api.multi
     @api.depends('order_line', 'order_line.product_uom_qty', 'order_line.product_uom_qty')
@@ -28,7 +30,8 @@ class SaleOrder(models.Model):
                     lambda l: not l.volumen and l.product_id.type != 'service' and l.product_uom_qty > 0):
                 sale.total_volumen = -1
                 continue
-            sale.total_volumen = sum(sale.order_line.mapped(lambda p: p.volumen * p.product_uom_qty))
+            # Sum all and Convert cm3 to m3
+            sale.total_volumen = sum(sale.order_line.mapped(lambda p: p.volumen * p.product_uom_qty)) / 1000000
 
 
 class SaleOrderLine(models.Model):
