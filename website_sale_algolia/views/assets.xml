@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+		<template id="assets_frontend" inherit_id="website.assets_frontend" name="Custom CSS-JS">
+			<xpath expr="." position="inside">
+				<link href="/website_sale_algolia/static/src/css/search_autocomplete.css" rel="stylesheet"/>
+				<script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js" type="text/javascript"></script>
+				<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js" type="text/javascript"></script>
+				<script src="/website_sale_algolia/static/src/js/search_autocomplete.js" type="text/javascript"></script>
+			</xpath>
+		</template>
+</odoo>

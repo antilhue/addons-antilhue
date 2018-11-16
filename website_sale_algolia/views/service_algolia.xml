@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="service_algolia_form_view">
+        <field name="name">service.algolia.form.view</field>
+        <field name="model">service.algolia</field>
+        <field name="arch" type="xml">
+            <form string="Algolia Service">
+                <sheet>
+                    <group col="2">
+                        <field name="name"/>
+                    </group>
+                    <group col="4" string="App Information">
+                        <field name="algolia_app_id"/>
+                        <field name="algolia_index"/>
+                        <field name="algolia_fields"/>
+                    </group>
+                    <group colspan="4" string="Security and Authentication">
+                        <field name="algolia_key_search" password="True"/>
+                        <field name="algolia_key_admin" password="True"/>
+                        <button name="test_algolia_connection" type="object" string="Test Connection" icon="fa-television"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="service_algolia_tree_view">
+        <field name="name">service.algolia.tree.view</field>
+        <field name="model">service.algolia</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="service_algolia_act_window">
+        <field name="name">Search Engine Backend</field>
+        <field name="res_model">service.algolia</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+    </record>
+
+    <menuitem id="algolia_menu"
+              parent="base.menu_administration"
+              name="Algolia"
+              sequence="10"
+              groups="website.group_website_designer"/>
+
+    <menuitem id="service_algolia_menu"
+        name="Algolia Service"
+        parent="website_sale_algolia.algolia_menu"
+        action="website_sale_algolia.service_algolia_act_window"/>
+
+</odoo>
