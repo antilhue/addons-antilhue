@@ -84,6 +84,3 @@ class ServiceAlgoliaTestCase(TransactionCase):
         delete_algolia.return_value = True
         self.ipod_product.active = False
         delete_algolia.assert_called_with(self.ipod_product.ids)
-
-
-

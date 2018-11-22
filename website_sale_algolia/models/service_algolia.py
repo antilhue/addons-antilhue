@@ -39,13 +39,9 @@ class ServiceAlgolia(models.Model):
         return index
 
     @api.multi
-    def _algolia_fields_to_list(self):
-        return (self.algolia_fields or '').split(',')
-
-    @api.multi
-    def execute(self, operation, records):
+    def _execute(self, operation, records):
         """Execute an operation (add, delete) in the Algolia service,
-        given in a set of records and return trueif the operation
+        given in a set of records and return true if the operation
         was successful or false otherwise.
         add --> add_objects
         delete --> delete_objects"""
@@ -54,18 +50,24 @@ class ServiceAlgolia(models.Model):
         list_records = self._generate_values(records) if operation == 'update' else records.ids
         operators_algolia = {'update': index.add_objects, 'delete': index.delete_objects}
         try:
-            method_algolia = operators_algolia.get(operation)
+            method_algolia = operators_algolia[operation]
             method_algolia(list_records)
-        except AlgoliaException as e:
+        except (AlgoliaException, KeyError) as e:
             _logger.warning(e)
             return False
         return True
+
+    def add_objects_in_algolia(self, records):
+        return self._execute('update', records)
+
+    def delete_objects_in_algolia(self, records):
+        return self._execute('delete', records)
 
     def _generate_values(self, records):
         """Return dict with product data to update in Algolia,
         always it has name and ObjectID values"""
         object_list = []
-        fields_list = self._algolia_fields_to_list()
+        fields_list = (self.algolia_fields or '').split(',')
         for each in records:
             value = {'objectID': each.id, 'name': each.name}
             for f in fields_list:

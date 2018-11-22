@@ -8,21 +8,30 @@ class ProductTemplate(models.Model):
     _inherit = 'product.template'
 
     @api.multi
-    def apply_action_algolia(self, action):
+    def _apply_action_algolia(self, action):
         website = self.env['website'].get_current_website()
         algolia = website.service_algolia_id
         if not algolia:
             return True
-        return algolia.execute(action, self)
+        if action == 'update':
+            return algolia.add_objects_in_algolia(self)
+        return algolia.delete_objects_in_algolia(self)
+
+    def update_products_algolia(self):
+        return self._apply_action_algolia('update')
+
+    def delete_products_algolia(self):
+        return self._apply_action_algolia('delete')
 
     @api.multi
     def write(self, values):
         """Update in Sevice Algolia"""
         res = super(ProductTemplate, self).write(values)
         if self._required_remove_in_algolia(values):
-            self.apply_action_algolia('delete')
-        elif self._required_modify_in_algolia(values):
-            self.apply_action_algolia('update')
+            self.delete_products_algolia()
+            return res
+        if self._required_modify_in_algolia(values):
+            self.update_products_algolia()
         return res
 
     @staticmethod
@@ -39,13 +48,12 @@ class ProductTemplate(models.Model):
     def unlink(self):
         product_publish = self.filtered(lambda p: p.website_published)
         if product_publish:
-            product_publish.apply_action_algolia('delete')
+            product_publish.delete_products_algolia()
         return super(ProductTemplate, self).unlink()
 
     @api.model
     def create(self, vals):
         template = super(ProductTemplate, self).create(vals)
         if template.website_published:
-            template.apply_action_algolia('update')
+            template.update_products_algolia()
         return template
-

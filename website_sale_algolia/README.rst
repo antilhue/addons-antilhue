@@ -6,11 +6,11 @@ Algolia based Auto-complete
 
     .. image:: static/img/shop_autocomplete.png
 
-  Para poder realizar la comunicacion con algolia se debe proporcionar las claves de acceso, el indice y el id de la aplicación.
+  Para poder realizar la comunicación con algolia se debe proporcionar las claves de acceso, el indice y el id de la aplicación.
 
     .. image:: static/img/algolia_backend.png
 
-  Luego debe agregar su servicio de algulia al sitio web, en la configuración del este.
+  Luego debe agregar su servicio de algolia al sitio web, en la configuración del este.
 
     .. image:: static/img/setting_website.png
 
