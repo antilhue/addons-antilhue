@@ -17,4 +17,4 @@ class ResConfigSettings(models.TransientModel):
         products = self.env['product.template'].search([("website_published", "=", True)])
         if not products:
             return False
-        products.update_produts_algolia()
+        products.update_products_algolia()
