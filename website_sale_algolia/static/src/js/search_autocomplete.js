@@ -9,7 +9,7 @@ odoo.define("website_sale_algolia.search_autocomplete", function(require) {
     function display_algolia(index, app, key) {
         const client = algoliasearch(app, key);
         const index_client = client.initIndex(index);
-        $(".search-autocomplete").autocomplete({ hint: false, debug: true}, [
+        $(".search-autocomplete").autocomplete({ hint: false}, [
             {
                 source: $.fn.autocomplete.sources.hits(index_client, { hitsPerPage: 8 }),
                 displayKey: 'name',
@@ -26,6 +26,7 @@ odoo.define("website_sale_algolia.search_autocomplete", function(require) {
             window.location.replace(window.location.origin +
                 '/shop/product/' + suggestion.objectID);
         });
+        $.each($(".search-autocomplete"), function(index, value) {value.autocomplete='off'})
         // TODO: add catch
     };
 });
