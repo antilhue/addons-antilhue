@@ -45,5 +45,5 @@ jobs:
           command: |
             odoo -d odoo --db_host $DB_HOST -r $USER --addons-path=$ADDONS_PATH -i  $MODULE_TEST --test-enable --log-level=test --stop-after-init
           environment:
-            ADDONS_PATH: "/Odoo11/odoo/addons,/Odoo11/addons,~/addons"
+            ADDONS_PATH: "~/addons"
             MODULE_TEST: "sales_package_summary,website_sale_algolia"
