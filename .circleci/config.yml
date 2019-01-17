@@ -30,7 +30,7 @@ jobs:
             wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
             tar -C /usr/local/bin -xzvf dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
             rm dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
-            pip install -r requirements.txt
+            pip3 install -r requirements.txt
           environment:
             DOCKERIZE_VERSION: v0.3.0
       - run:
@@ -39,13 +39,11 @@ jobs:
       - run:
           name: Install odoo
           command: |
-            . /virtualenv/python3.5/bin/activate
-            python /Odoo11/odoo-bin -d odoo --db_host $DB_HOST -r $USER --stop-after-init
+            odoo -d odoo --db_host $DB_HOST -r $USER --stop-after-init
       - run:
           name: Install modules and Run test
           command: |
-            . /virtualenv/python3.5/bin/activate
-            python /Odoo11/odoo-bin -d odoo --db_host $DB_HOST -r $USER --addons-path=$ADDONS_PATH -i  $MODULE_TEST --test-enable --log-level=test --stop-after-init
+            odoo -d odoo --db_host $DB_HOST -r $USER --addons-path=$ADDONS_PATH -i  $MODULE_TEST --test-enable --log-level=test --stop-after-init
           environment:
             ADDONS_PATH: "/Odoo11/odoo/addons,/Odoo11/addons,~/addons"
             MODULE_TEST: "sales_package_summary,website_sale_algolia"
