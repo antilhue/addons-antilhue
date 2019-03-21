@@ -1,0 +1,185 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* auth_signup_approval
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0+e-20190315\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-21 19:56+0000\n"
+"PO-Revision-Date: 2019-03-21 19:56+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: auth_signup_approval
+#: model:mail.template,body_html:auth_signup_approval.user_pending_approval
+msgid "\n"
+"<div style=\"padding:0px;width:600px;margin:auto;background: #FFFFFF repeat top /100%;color:#777777\">\n"
+"    <p>Dear,</p>\n"
+"    <p>\n"
+"       The user ${object.name} has requested to sign up on the site. The request is awaiting your approval. <br/>\n"
+"       <a href=${object.get_url_view_user()}>Click here</a> to go to the user config.\n"
+"    </p>\n"
+"    <p>Best regards,</p>\n"
+"</div>\n"
+"<div style=\"padding:0px;width:600px;margin:auto; margin-top: 10px; background: #fff repeat top /100%;color:#777777\">\n"
+"    ${user.signature | safe}\n"
+"</div>"
+msgstr "\n"
+"<div style=\"padding:0px;width:600px;margin:auto;background: #FFFFFF repeat top /100%;color:#777777\">\n"
+"    <p>Estimado,</p>\n"
+"    <p>\n"
+"       El usuario ${object.name} ha solicitado resgistrarse en el sitio web. La solicitud esta esperando su aprobación. <br/>\n"
+"       <a href=${object.get_url_view_user()}>Click aquí</a> para ir a la configuracion del usuario.\n"
+"    </p>\n"
+"    <p>Saludos,</p>\n"
+"</div>\n"
+"<div style=\"padding:0px;width:600px;margin:auto; margin-top: 10px; background: #fff repeat top /100%;color:#777777\">\n"
+"    ${user.signature | safe}\n"
+"</div>"
+
+#. module: auth_signup_approval
+#: model:mail.template,body_html:auth_signup_approval.user_signup_rejected
+msgid "\n"
+"<div style=\"padding:0px;width:600px;margin:auto;background: #FFFFFF repeat top /100%;color:#777777\">\n"
+"    <table cellspacing=\"0\" cellpadding=\"0\" style=\"width:600px;border-collapse:collapse;background:inherit;color:inherit\">\n"
+"        <tbody><tr>\n"
+"            <td valign=\"center\" width=\"200\" style=\"padding:10px 10px 10px 5px;font-size: 12px\">\n"
+"                <img src=\"/logo.png\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" alt=\"${user.company_id.name}\" />\n"
+"            </td>\n"
+"        </tr></tbody>\n"
+"    </table>\n"
+"</div>\n"
+"<div style=\"padding:0px;width:600px;margin:auto;background: #FFFFFF repeat top /100%;color:#777777\">\n"
+"    <p>Dear ${object.name},</p>\n"
+"    <p>\n"
+"    We're sorry, but your request to register in our site has been rejected.\n"
+"    For any inquiry about the registration approval process, please contact us.\n"
+"    </p>\n"
+"    <p>Best regards,</p>\n"
+"</div>\n"
+"<div style=\"padding:0px;width:600px;margin:auto; margin-top: 10px; background: #fff repeat top /100%;color:#777777\">\n"
+"    ${user.signature | safe}\n"
+"</div>"
+msgstr "\n"
+"<div style=\"padding:0px;width:600px;margin:auto;background: #FFFFFF repeat top /100%;color:#777777\">\n"
+"    <table cellspacing=\"0\" cellpadding=\"0\" style=\"width:600px;border-collapse:collapse;background:inherit;color:inherit\">\n"
+"        <tbody><tr>\n"
+"            <td valign=\"center\" width=\"200\" style=\"padding:10px 10px 10px 5px;font-size: 12px\">\n"
+"                <img src=\"/logo.png\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" alt=\"${user.company_id.name}\" />\n"
+"            </td>\n"
+"        </tr></tbody>\n"
+"    </table>\n"
+"</div>\n"
+"<div style=\"padding:0px;width:600px;margin:auto;background: #FFFFFF repeat top /100%;color:#777777\">\n"
+"    <p>Estimado ${object.name},</p>\n"
+"    <p>\n"
+"    Lo sentimos, pero su solicitud de registro en nuestro sitio ha sido rechazada.\n"
+"    Para cualquier consulta sobre el proceso de aprobación de registro, por favor contáctenos.\n"
+"    </p>\n"
+"    <p>Saludos,</p>\n"
+"</div>\n"
+"<div style=\"padding:0px;width:600px;margin:auto; margin-top: 10px; background: #fff repeat top /100%;color:#777777\">\n"
+"    ${user.signature | safe}\n"
+"</div>"
+
+#. module: auth_signup_approval
+#: code:addons/auth_signup_approval/controllers/main.py:73
+#, python-format
+msgid "Another user is already registered using this email address."
+msgstr "Otro usuario ya está registrado usando esta dirección de correo electrónico."
+
+#. module: auth_signup_approval
+#: model:ir.model.fields,field_description:auth_signup_approval.field_res_users_approval_status
+msgid "Approval Status"
+msgstr "Estado de aprobación"
+
+#. module: auth_signup_approval
+#: model:ir.ui.view,arch_db:auth_signup_approval.res_users_form_view
+msgid "Approve"
+msgstr "Aprobar"
+
+#. module: auth_signup_approval
+#: selection:res.users,approval_status:0
+msgid "Approved"
+msgstr "Aprobado"
+
+#. module: auth_signup_approval
+#: model:mail.template,subject:auth_signup_approval.user_pending_approval
+msgid "New Auth Signup: ${object.name}"
+msgstr "Nuevo registro: ${object.name}"
+
+#. module: auth_signup_approval
+#: model:ir.model.fields,field_description:auth_signup_approval.field_res_config_settings_notify_signup_user_ids
+msgid "Notified users when a user sign up"
+msgstr "Usuarios notificados cuando un usuario se registra"
+
+#. module: auth_signup_approval
+#: code:addons/auth_signup_approval/models/res_users.py:78
+#, python-format
+msgid "Notify Sign Up: invalid username or email"
+msgstr "Notificacion de registro: nombre de usuario o email invalido"
+
+#. module: auth_signup_approval
+#: selection:res.users,approval_status:0
+msgid "Pending"
+msgstr "Pendiente"
+
+#. module: auth_signup_approval
+#: model:ir.ui.view,arch_db:auth_signup_approval.view_users_search
+msgid "Pending Users"
+msgstr "Usuarios Pendientes"
+
+#. module: auth_signup_approval
+#: model:ir.ui.view,arch_db:auth_signup_approval.res_users_form_view
+msgid "Reject"
+msgstr "Rechazar"
+
+#. module: auth_signup_approval
+#: selection:res.users,approval_status:0
+msgid "Rejected"
+msgstr "Rechazado"
+
+#. module: auth_signup_approval
+#: model:ir.ui.view,arch_db:auth_signup_approval.res_config_settings_view_form
+msgid "Send email for these users when a user sign up"
+msgstr "Enviar correo electrónico a estos usuarios cuando un usuario se registre"
+
+#. module: auth_signup_approval
+#: code:addons/auth_signup_approval/controllers/main.py:76
+#, python-format
+msgid "Something went wrong, please try again later or contact us."
+msgstr "Algo ha ido mal, por favor inténtelo de nuevo más tarde o contáctenos."
+
+#. module: auth_signup_approval
+#: code:addons/auth_signup_approval/controllers/main.py:99
+#, python-format
+msgid "Thank you for you singup we will sent you activation email on your registered email shortly once you account is approved"
+msgstr "Gracias por su registro, le enviaremos un correo electrónico de activación en su correo electrónico registrado una vez que se apruebe su cuenta."
+
+#. module: auth_signup_approval
+#: code:addons/auth_signup_approval/controllers/main.py:52
+#, python-format
+msgid "That does not seem to be an email address."
+msgstr "Eso no parece una dirección de email válida."
+
+#. module: auth_signup_approval
+#: model:ir.model,name:auth_signup_approval.model_res_users
+#: model:ir.ui.view,arch_db:auth_signup_approval.res_config_settings_view_form
+msgid "Users"
+msgstr "Usuarios"
+
+#. module: auth_signup_approval
+#: model:mail.template,subject:auth_signup_approval.user_signup_rejected
+msgid "Your request Sign Up to ${object.company_id.name}"
+msgstr "Su solicitud de registro para ${object.company_id.name}"
+
+#. module: auth_signup_approval
+#: model:ir.model,name:auth_signup_approval.model_res_config_settings
+msgid "res.config.settings"
+msgstr "res.config.settings"
+
