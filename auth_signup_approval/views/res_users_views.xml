@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_users_form_view" model="ir.ui.view">
+        <field name="name">res.users.form.inherit</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="auth_signup.res_users_form_view"/>
+        <field name="arch" type="xml">
+            <!-- add state field in header -->
+            <xpath expr="//field[@name='state']" position="before">
+                <button string="Approve"
+                        type="object" name="action_approval"
+                        context="{'create_user': 1}"
+                        attrs="{'invisible': [('state', 'not in', ['pending', 'rejected'])]}"/>
+                <button string="Reject"
+                        type="object" name="action_reject"
+                        attrs="{'invisible': [('state', '!=', 'pending')]}"/>
+
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_users_search" model="ir.ui.view">
+        <field name="name">res.users.search</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search" position="inside">
+                <field name="approval_status"/>
+                <filter name="pending" string="Pending Users" domain="[('share','=',True), ('approval_status', '=', 'pending')]"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_users_tree" model="ir.ui.view">
+        <field name="name">res.users.tree</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='login']" position="after">
+                <field name="state"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
