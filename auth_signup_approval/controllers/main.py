@@ -45,17 +45,16 @@ class SignupVerifyEmail(AuthSignupHome):
         error = ""
         try:
             validate_email(login or "")
-        except EmailSyntaxError as error:
+        except EmailSyntaxError as e:
             error = getattr(
-                error,
+                e,
                 "message",
                 _("That does not seem to be an email address."),
             )
-        except EmailUndeliverableError as error:
-            error = str(error)
-        except Exception as error:
-            error = str(error)
-
+        except EmailUndeliverableError as e:
+            error = str(e)
+        except Exception as e:
+            error = str(e)
         return error
 
     @staticmethod
@@ -80,14 +79,16 @@ class SignupVerifyEmail(AuthSignupHome):
     def passwordless_signup(self, values):
         qcontext = self.get_auth_signup_qcontext()
         login = values.get("login", "")
-        message = self.check_format_email(login)
+        message = self.check_format_email(login) or qcontext.get('error', '')
         if message:
             qcontext["error"] = message
             return request.render("auth_signup.signup", qcontext)
 
         values["email"] = values.get("email", login)
         # preserve user lang
-        values["lang"] = request.lang
+        supported_langs = [lang['code'] for lang in request.env['res.lang'].sudo().search_read([], ['code'])]
+        if request.lang in supported_langs:
+            values['lang'] = request.lang
         # Remove password
         values["password"] = ""
 
