@@ -78,3 +78,14 @@ class ResUsers(models.Model):
         users.notify_admin_user_signup()
 
         return cr, login, password
+
+    def reset_password(self, login):
+        """ retrieve the user corresponding to login (login or email),
+            and reset their password
+        """
+        users = self.search([('login', '=', login), ('approval_status', '=', 'approved')])
+        if not users:
+            users = self.search([('email', '=', login), ('approval_status', '=', 'approved')])
+        if len(users) != 1:
+            raise Exception(_('Reset password: invalid username or email'))
+        return users.action_reset_password()
