@@ -97,7 +97,7 @@ class SignupVerifyEmail(AuthSignupHome):
             return request.render("auth_signup.signup", qcontext)
 
         qcontext["message"] = _(
-            """Thank you for signing up in our site. Your information it's being reviewed by one of our administrators, and we have received an email with instructions on how to activate it."""
+            """Thank you for signing up in our site. Your information it's being reviewed by one of our administrators. As soon as your account review is finished, we will email you with instructions on how to activate it."""
         )
 
         return request.render("auth_signup.reset_password", qcontext)
