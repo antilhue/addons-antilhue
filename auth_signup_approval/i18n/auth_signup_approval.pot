@@ -127,8 +127,7 @@ msgstr ""
 #. module: auth_signup_approval
 #: code:addons/auth_signup_approval/controllers/main.py:99
 #, python-format
-msgid "Thank you for signing up in our site. Your information it's being reviewed by one of our administrators.\n"
-"            If your account is approved, you will receive an email with instructions on how to activate it."
+msgid "Thank you for signing up in our site. Your information it's being reviewed by one of our administrators, and we have received an email with instructions on how to activate it."
 msgstr ""
 
 #. module: auth_signup_approval

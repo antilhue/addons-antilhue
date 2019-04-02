@@ -158,10 +158,8 @@ msgstr "Algo ha ido mal, por favor inténtelo de nuevo más tarde o contáctenos
 #. module: auth_signup_approval
 #: code:addons/auth_signup_approval/controllers/main.py:99
 #, python-format
-msgid "Thank you for signing up in our site. Your information it's being reviewed by one of our administrators.\n"
-"            If your account is approved, you will receive an email with instructions on how to activate it."
-msgstr "Gracias por registrarse en nuestro sitio. Su información esta siendo revisada por uno de nuestros administradores.\n"
-"            Si su cuenta es aprovada, recibirá un correo con instrucciones de cómo activarla."
+msgid "Thank you for signing up in our site. Your information it's being reviewed by one of our administrators. As soon as your account review is finished, we will email you with instructions on how to activate it."
+msgstr "Gracias por registrarse en nuestro sitio. Su información esta siendo revisada por uno de nuestros administradores. Apenas termine la revisión de su cuenta, recibirá un correo con instrucciones de cómo activarla."
 
 #. module: auth_signup_approval
 #: code:addons/auth_signup_approval/controllers/main.py:52
