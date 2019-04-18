@@ -54,7 +54,7 @@ msgstr "Adjuntar documento para validar su orden"
 #. module: website_quote_attach_document
 #: model:ir.ui.view,arch_db:website_quote_attach_document.attach_document
 msgid "Cancel"
-msgstr "Anular"
+msgstr "Cancelar"
 
 #. module: website_quote_attach_document
 #: model:ir.ui.view,arch_db:website_quote_attach_document.attach_document
