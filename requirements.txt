@@ -1,2 +1,2 @@
-algoliasearch
+algoliasearch<2.0
 email_validator
