@@ -14,6 +14,11 @@
     </template>
 
     <template id="confirmation" inherit_id="website_sale.confirmation">
+        <xpath expr="//div[hasclass('thanks_msg')]/h2"
+               position="inside">
+            <a style="margin-right:10px;" class="btn btn-primary pull-right hidden-xs" href="/shop/quote/redirect" target="_self"> Go to order <i class="fa fa-arrow-right"/></a>
+        </xpath>
+
         <xpath expr="//t[@t-call='website_sale.payment_confirmation_status']"
                position="after">
             <div class="alert alert-info" role="alert"

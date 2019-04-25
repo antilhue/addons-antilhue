@@ -28,3 +28,11 @@ class WebsiteSaleQuote(WebsiteSale):
                 'order': order
             })
         }
+
+    @http.route(['/shop/quote/redirect'], type='http', auth="public", website=True)
+    def redirect_saleorder(self):
+        sale_order_id = request.session.get('sale_last_order_id')
+        if sale_order_id:
+            return request.redirect('/quote/%s' % sale_order_id)
+        else:
+            return request.redirect('/shop')
