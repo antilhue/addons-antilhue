@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Form View  Product.template  -->
+    <record id="view_delivery_customs_carrier_form" model="ir.ui.view">
+        <field name="name">delivery.carrier.form</field>
+        <field name="model">delivery.carrier</field>
+        <field name="inherit_id" ref="delivery.view_delivery_carrier_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='amount']" position="after">
+                <div class="o_row o_td_label">
+                    <field name="customs_require"/>
+                    <label for="customs_require"/>
+                </div>
+                <div attrs="{'invisible':[('customs_require','=', False)]}">
+                    <div class="o_row o_td_label">
+                        <label for="customs_cost"/>
+                        <field  name="customs_cost" attrs="{'required':[('customs_require','==', True)], 'invisible':[('customs_require','=', False)]}"/>
+                    </div>
+                    <div class="o_row o_td_label" >
+                        <label for="customs_amount"/>
+                        <field name="customs_amount" attrs="{'required':[('customs_require','==', True)], 'invisible':[('customs_require','=', False)]}"/>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
