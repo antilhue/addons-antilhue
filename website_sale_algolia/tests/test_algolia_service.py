@@ -64,7 +64,7 @@ class ServiceAlgoliaTestCase(TransactionCase):
         dict_values = {
             'objectID': product.id,
             'name': product.name,
-            'default_code': product.default_code}
+            'default_code': product.default_code or ''}
         add_algolia.assert_called_with([dict_values])
 
         # Unlink
