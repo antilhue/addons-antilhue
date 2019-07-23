@@ -73,7 +73,7 @@ class ServiceAlgolia(models.Model):
             for f in fields_list:
                 # Omit wrong field
                 try:
-                    value[f] = each[f]
+                    value[f] = each[f] or ''
                 except KeyError:
                     continue
             object_list.append(value)
