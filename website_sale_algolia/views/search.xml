@@ -17,4 +17,16 @@
         </xpath>
     </template>
 
+    <template id="setting_algolia" inherit_id="portal.frontend_layout">
+        <xpath expr="//t[@t-set='head_website']" position="inside">
+            <script type="text/javascript">
+                    odoo.setting_algolia = {
+                        app: <t t-raw="json.dumps(website.service_algolia_id.algolia_app_id)"/>,
+                        key: <t t-raw="json.dumps(website.service_algolia_id.algolia_key_search)"/>,
+                        index: <t t-raw="json.dumps(website.service_algolia_id.algolia_index)"/>,
+                    };
+            </script>
+        </xpath>
+    </template>
+
 </odoo>
