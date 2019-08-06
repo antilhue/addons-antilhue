@@ -1,11 +1,14 @@
 odoo.define("website_sale_algolia.search_autocomplete", function(require) {
     "use strict";
     require('web.dom_ready');
-    const ajax = require('web.ajax');
-    ajax.jsonRpc("/shop/get_algolia_settings/").then(function (data) {
-        if(!data) return;
+    if (odoo.setting_algolia){
+        const data = odoo.setting_algolia
+        if (!$(".search-autocomplete")){
+            return true;
+        }
         display_algolia(data.index, data.app, data.key);
-        });
+    }
+
     function display_algolia(index, app, key) {
         const client = algoliasearch(app, key);
         const index_client = client.initIndex(index);
