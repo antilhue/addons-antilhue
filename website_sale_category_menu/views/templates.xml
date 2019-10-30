@@ -29,7 +29,8 @@
 
     <template id="option_collapse_categories_recursive" name="Collapse Category Recursive">
         <li t-att-class="'dropdown mega-dropdown' if not categ.parent_id else 'dropdown-header'">
-            <a t-att-href="None if categ.child_id else '/shop/category/' + slug(categ)" t-field="categ.name"></a>
+            <a t-att-href="'/shop/category/' + slug(categ)" t-field="categ.name" t-if="not categ.child_id"></a>
+            <a t-field="categ.name" t-else=""></a>
             <ul t-if="categ.child_id" t-att-class="'dropdown-menu mega-dropdown-menu row' if not categ.parent_id else None">
                 <t t-foreach="categ.child_id" t-as="categ">
                     <t t-call="website_sale_category_menu.option_collapse_categories_recursive" />
