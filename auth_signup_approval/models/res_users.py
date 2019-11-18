@@ -83,9 +83,9 @@ class ResUsers(models.Model):
         """ retrieve the user corresponding to login (login or email),
             and reset their password
         """
-        users = self.search([('login', '=', login), ('approval_status', '=', 'approved')])
+        users = self.search([('login', '=', login)])
         if not users:
-            users = self.search([('email', '=', login), ('approval_status', '=', 'approved')])
-        if len(users) != 1:
+            users = self.search([('email', '=', login)])
+        if len(users) != 1 or (users.state != 'active' or users.approval_status == 'rejected'):
             raise Exception(_('Reset password: invalid username or email'))
         return users.action_reset_password()
