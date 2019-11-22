@@ -8,7 +8,6 @@ odoo.define('website_sale_category_manu.categories_menu', function (require) {
             window.mytimeout = setTimeout(function() {
                 $('.container-opacacity').addClass('container-show');
                 $category.find('.mega-dropdown-menu').addClass('category-show')
-               console.log($category)
                } , 250);
         },
         function () {
