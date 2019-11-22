@@ -24,7 +24,8 @@
     text-decoration: none !important;
 }
 
-.mega-dropdown:hover .mega-dropdown-menu {
+/*.mega-dropdown:hover .mega-dropdown-menu {*/
+.category-show {
     display: block;
     z-index: 1100;
 }
