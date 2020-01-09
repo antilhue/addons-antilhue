@@ -6,7 +6,7 @@
         <field name="model">res.config.settings</field>
         <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
         <field name="arch" type="xml">
-            <div id="default_user_rights" position="inside">
+            <div id="user_default_rights" position="inside">
                 <div class="col-xs-12 col-md-6 o_setting_box">
                     <div class="o_setting_right_pane">
                         <label for="notify_signup_user_ids"/>
