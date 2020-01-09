@@ -10,6 +10,9 @@ class TestDeliveryCustomsCost(common.TransactionCase):
         self.SaleOrder = self.env['sale.order']
         self.SaleOrderLine = self.env['sale.order.line']
         self.partner_18 = self.env.ref('base.res_partner_18')
+        self.partner_18.write({
+            "country_id": self.env.ref('base.pe').id
+        })
         self.pricelist = self.env.ref('product.list0')
         self.product_4 = self.env.ref('product.product_product_4')
 
