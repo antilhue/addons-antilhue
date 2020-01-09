@@ -16,8 +16,11 @@ class Delivery(models.Model):
         is_foreign = order.partner_shipping_id.country_id != order.company_id.partner_id.country_id
         if not res['price'] or not self.customs_require or not is_foreign:
             return res
-        amount = order.company_id.currency_id.compute(self.customs_amount, order.currency_id, round=False)
+        date = fields.Date.today()
+        amount = order.company_id.currency_id._convert(
+            self.customs_amount, order.currency_id, order.company_id, date, round=False)
         if order._compute_amount_total_without_delivery() >= amount:
-            cost = order.company_id.currency_id.compute(self.customs_cost, order.currency_id, round=False)
+            cost = order.company_id.currency_id._convert(
+                self.customs_cost, order.currency_id, order.company_id, date, round=False)
             res['price'] = res['price'] + cost
         return res
