@@ -3,7 +3,7 @@
     <record id="res_users_form_view" model="ir.ui.view">
         <field name="name">res.users.form.inherit</field>
         <field name="model">res.users</field>
-        <field name="inherit_id" ref="auth_signup.res_users_form_view"/>
+        <field name="inherit_id" ref="auth_signup.res_users_view_form"/>
         <field name="arch" type="xml">
             <!-- add state field in header -->
             <xpath expr="//field[@name='state']" position="before">
