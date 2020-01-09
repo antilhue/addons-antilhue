@@ -3,7 +3,7 @@
     "name": 'Customs cost in delivery',
     "summary": 'Include customs cost in delivery',
     "author": 'maitaoriana',
-    "version": '1.0',
+    "version": '12.0.1.0.0',
     "depends": ['delivery'],
     "license": "LGPL-3",
     "data": [
