@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 11.0+e-20190315\n"
+"Project-Id-Version: Odoo Server 12.0+e-20200107\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-03 16:08+0000\n"
-"PO-Revision-Date: 2019-05-03 16:08+0000\n"
+"POT-Creation-Date: 2020-01-09 20:25+0000\n"
+"PO-Revision-Date: 2020-01-09 20:25+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,32 +16,31 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: delivery_cost_customs
-#: model:ir.model.fields,help:delivery_cost_customs.field_delivery_carrier_customs_amount
+#: model:ir.model.fields,help:delivery_cost_customs.field_delivery_carrier__customs_amount
 msgid "Amount of order to include customs cost, expressed in the company currency."
 msgstr "Monto de la orden a incluir costo de envio, expresado en la moneda de la compañia"
 
 #. module: delivery_cost_customs
-#: model:ir.model,name:delivery_cost_customs.model_delivery_carrier
-msgid "Carrier"
-msgstr "Forma de envío"
-
-#. module: delivery_cost_customs
-#: model:ir.model.fields,help:delivery_cost_customs.field_delivery_carrier_customs_cost
+#: model:ir.model.fields,help:delivery_cost_customs.field_delivery_carrier__customs_cost
 msgid "Cost of customs agent"
-msgstr "Costo de aguente aduanero"
+msgstr "Costo de agente aduanero"
 
 #. module: delivery_cost_customs
-#: model:ir.model.fields,field_description:delivery_cost_customs.field_delivery_carrier_customs_cost
+#: model:ir.model.fields,field_description:delivery_cost_customs.field_delivery_carrier__customs_cost
 msgid "Customs cost to include"
 msgstr "Costo de envio a incluir"
 
 #. module: delivery_cost_customs
-#: model:ir.model.fields,field_description:delivery_cost_customs.field_delivery_carrier_customs_require
+#: model:ir.model,name:delivery_cost_customs.model_delivery_carrier
+msgid "Delivery Methods"
+msgstr "Método de envío"
+
+#. module: delivery_cost_customs
+#: model:ir.model.fields,field_description:delivery_cost_customs.field_delivery_carrier__customs_require
 msgid "Include cost of customs in export."
 msgstr "Incluir costo de envio en exportación."
 
 #. module: delivery_cost_customs
-#: model:ir.model.fields,field_description:delivery_cost_customs.field_delivery_carrier_customs_amount
+#: model:ir.model.fields,field_description:delivery_cost_customs.field_delivery_carrier__customs_amount
 msgid "when the sale is greater than"
 msgstr "cuando la venta es superior a"
-
