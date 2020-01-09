@@ -3,7 +3,7 @@
     "name": 'Aws monitoring',
     "summary": "Add monitoring endpoint '/health'",
     "author": 'maitaoriana',
-    "version": '1.0',
+    "version": '12.0.1.0.0',
     "depends": ['base', 'web'],
     "license": 'AGPL-3',
     "data": [],
