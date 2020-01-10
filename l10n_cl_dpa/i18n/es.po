@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 11.0+e-20190315\n"
+"Project-Id-Version: Odoo Server 12.0+e-20200107\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-07 17:29+0000\n"
-"PO-Revision-Date: 2019-05-07 17:29+0000\n"
+"POT-Creation-Date: 2020-01-10 12:59+0000\n"
+"PO-Revision-Date: 2020-01-10 12:59+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -18,377 +18,376 @@ msgstr ""
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL12202
 msgid "ANTÁRTICA"
-msgstr "ANTÁRTICA"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05602
 msgid "Algarrobo"
-msgstr "Algarrobo"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13502
 msgid "Alhué"
-msgstr "Alhué"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08314
 msgid "Alto Biobío"
-msgstr "Alto Biobío"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL01107
 msgid "Alto Hospicio"
-msgstr "Alto Hospicio"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL03302
 msgid "Alto del Carmen"
-msgstr "Alto del Carmen"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10202
 msgid "Ancud"
-msgstr "Ancud"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL04103
 msgid "Andacollo"
-msgstr "Andacollo"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09201
 msgid "Angol"
-msgstr "Angol"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL02101
 msgid "Antofagasta"
-msgstr "Antofagasta"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08302
 msgid "Antuco"
-msgstr "Antuco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08202
 msgid "Arauco"
-msgstr "Arauco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL15101
 msgid "Arica"
-msgstr "Arica"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL11201
 msgid "Aysén"
-msgstr "Aysén"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13402
 msgid "Buin"
-msgstr "Buin"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08402
 msgid "Bulnes"
-msgstr "Bulnes"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05402
 msgid "Cabildo"
-msgstr "Cabildo"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL12201
 msgid "Cabo de Hornos"
-msgstr "Cabo de Hornos"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08303
 msgid "Cabrero"
-msgstr "Cabrero"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL02201
 msgid "Calama"
-msgstr "Calama"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10102
 msgid "Calbuco"
-msgstr "Calbuco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL03102
 msgid "Caldera"
-msgstr "Caldera"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05502
 msgid "Calera"
-msgstr "Calera"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13403
 msgid "Calera de Tango"
-msgstr "Calera de Tango"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05302
 msgid "Calle Larga"
-msgstr "Calle Larga"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL15102
 msgid "Camarones"
-msgstr "Camarones"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL01402
 msgid "Camiña"
-msgstr "Camiña"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL04202
 msgid "Canela"
-msgstr "Canela"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09102
 msgid "Carahue"
-msgstr "Carahue"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05603
 msgid "Cartagena"
-msgstr "Cartagena"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05102
 msgid "Casablanca"
-msgstr "Casablanca"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10201
 msgid "Castro"
-msgstr "Castro"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05702
 msgid "Catemu"
-msgstr "Catemu"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07201
 msgid "Cauquenes"
-msgstr "Cauquenes"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08203
 msgid "Cañete"
-msgstr "Cañete"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13102
 msgid "Cerrillos"
-msgstr "Cerrillos"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13103
 msgid "Cerro Navia"
-msgstr "Cerro Navia"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10401
 msgid "Chaitén"
-msgstr "Chaitén"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07202
 msgid "Chanco"
-msgstr "Chanco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL03201
 msgid "Chañaral"
-msgstr "Chañaral"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08103
 msgid "Chiguayante"
-msgstr "Chiguayante"
+msgstr ""
 
 #. module: l10n_cl_dpa
-#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_country_state_region_child_ids
+#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_country_state_region__child_ids
 msgid "Child Regions"
-msgstr "Child Regions"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL11401
 msgid "Chile Chico"
-msgstr "Chile Chico"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08401
 msgid "Chillán"
-msgstr "Chillán"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08406
 msgid "Chillán Viejo"
-msgstr "Chillán Viejo"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06303
 msgid "Chimbarongo"
-msgstr "Chimbarongo"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09121
 msgid "Cholchol"
-msgstr "Cholchol"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10203
 msgid "Chonchi"
-msgstr "Chonchi"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06302
 msgid "Chépica"
-msgstr "Chépica"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL11202
 msgid "Cisnes"
-msgstr "Cisnes"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:ir.model,name:l10n_cl_dpa.model_res_city
-#: model:ir.ui.view,arch_db:l10n_cl_dpa.cl_partner_address_form
-#: model:ir.ui.view,arch_db:l10n_cl_dpa.view_region_state_tree
+#: model_terms:ir.ui.view,arch_db:l10n_cl_dpa.cl_partner_address_form
 msgid "City"
 msgstr "Ciudad"
 
 #. module: l10n_cl_dpa
-#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_city_l10n_cl_code
+#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_city__l10n_cl_code
 msgid "City Code"
-msgstr "City Code"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08403
 msgid "Cobquecura"
-msgstr "Cobquecura"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10103
 msgid "Cochamó"
-msgstr "Cochamó"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL11301
 msgid "Cochrane"
-msgstr "Cochrane"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08404
 msgid "Coelemu"
-msgstr "Coelemu"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL11101
 msgid "Coihaique"
-msgstr "Coihaique"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08405
 msgid "Coihueco"
-msgstr "Coihueco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06103
 msgid "Coinco"
-msgstr "Coinco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07402
 msgid "Colbún"
-msgstr "Colbún"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL01403
 msgid "Colchane"
-msgstr "Colchane"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13301
 msgid "Colina"
-msgstr "Colina"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09202
 msgid "Collipulli"
-msgstr "Collipulli"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06104
 msgid "Coltauco"
-msgstr "Coltauco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL04302
 msgid "Combarbalá"
-msgstr "Combarbalá"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08101
 msgid "Concepción"
-msgstr "Concepción"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13104
 msgid "Conchalí"
-msgstr "Conchalí"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05103
 msgid "Concón"
-msgstr "Concón"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07102
 msgid "Constitución"
-msgstr "Constitución"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08204
 msgid "Contulmo"
-msgstr "Contulmo"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL03101
 msgid "Copiapó"
-msgstr "Copiapó"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL04102
 msgid "Coquimbo"
-msgstr "Coquimbo"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08102
 msgid "Coronel"
-msgstr "Coronel"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL14102
 msgid "Corral"
-msgstr "Corral"
+msgstr ""
 
 #. module: l10n_cl_dpa
-#: model:ir.ui.view,arch_db:l10n_cl_dpa.cl_partner_address_form
+#: model_terms:ir.ui.view,arch_db:l10n_cl_dpa.cl_partner_address_form
 msgid "Country"
 msgstr "País"
 
@@ -398,1469 +397,1468 @@ msgid "Country state"
 msgstr "Provincia"
 
 #. module: l10n_cl_dpa
-#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_country_state_region_create_uid
+#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_country_state_region__create_uid
 msgid "Created by"
 msgstr "Creado por"
 
 #. module: l10n_cl_dpa
-#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_country_state_region_create_date
+#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_country_state_region__create_date
 msgid "Created on"
 msgstr "Creado en"
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09103
 msgid "Cunco"
-msgstr "Cunco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09203
 msgid "Curacautín"
-msgstr "Curacautín"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13503
 msgid "Curacaví"
-msgstr "Curacaví"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10204
 msgid "Curaco de Vélez"
-msgstr "Curaco de Vélez"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08205
 msgid "Curanilahue"
-msgstr "Curanilahue"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09104
 msgid "Curarrehue"
-msgstr "Curarrehue"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07103
 msgid "Curepto"
-msgstr "Curepto"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07301
 msgid "Curicó"
-msgstr "Curicó"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10205
 msgid "Dalcahue"
-msgstr "Dalcahue"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL03202
 msgid "Diego de Almagro"
-msgstr "Diego de Almagro"
+msgstr ""
 
 #. module: l10n_cl_dpa
-#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_country_state_region_display_name
+#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_country_state_region__display_name
 msgid "Display Name"
 msgstr "Nombre mostrado"
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06105
 msgid "Doñihue"
-msgstr "Doñihue"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13105
 msgid "El Bosque"
-msgstr "El Bosque"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08407
 msgid "El Carmen"
-msgstr "El Carmen"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13602
 msgid "El Monte"
-msgstr "El Monte"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05604
 msgid "El Quisco"
-msgstr "El Quisco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05605
 msgid "El Tabo"
-msgstr "El Tabo"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07104
 msgid "Empedrado"
-msgstr "Empedrado"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09204
 msgid "Ercilla"
-msgstr "Ercilla"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13106
 msgid "Estación Central"
-msgstr "Estación Central"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08104
 msgid "Florida"
-msgstr "Florida"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09105
 msgid "Freire"
-msgstr "Freire"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL03303
 msgid "Freirina"
-msgstr "Freirina"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10104
 msgid "Fresia"
-msgstr "Fresia"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10105
 msgid "Frutillar"
-msgstr "Frutillar"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10402
 msgid "Futaleufú"
-msgstr "Futaleufú"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL14202
 msgid "Futrono"
-msgstr "Futrono"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09106
 msgid "Galvarino"
-msgstr "Galvarino"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL15202
 msgid "General Lagos"
-msgstr "General Lagos"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09107
 msgid "Gorbea"
-msgstr "Gorbea"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06106
 msgid "Graneros"
-msgstr "Graneros"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL11203
 msgid "Guaitecas"
-msgstr "Guaitecas"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05503
 msgid "Hijuelas"
-msgstr "Hijuelas"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10403
 msgid "Hualaihue"
-msgstr "Hualaihue"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07302
 msgid "Hualañé"
-msgstr "Hualañé"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08112
 msgid "Hualpén"
-msgstr "Hualpén"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08105
 msgid "Hualqui"
-msgstr "Hualqui"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL01404
 msgid "Huara"
-msgstr "Huara"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL03304
 msgid "Huasco"
-msgstr "Huasco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13107
 msgid "Huechuraba"
-msgstr "Huechuraba"
+msgstr ""
 
 #. module: l10n_cl_dpa
-#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_country_state_region_id
+#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_country_state_region__id
 msgid "ID"
 msgstr "ID (identificación)"
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL04201
 msgid "Illapel"
-msgstr "Illapel"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13108
 msgid "Independencia"
-msgstr "Independencia"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL01101
 msgid "Iquique"
-msgstr "Iquique"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13603
 msgid "Isla de Maipo"
-msgstr "Isla de Maipo"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05201
 msgid "Isla de Pascua"
-msgstr "Isla de Pascua"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05104
 msgid "Juan Fernández"
-msgstr "Juan Fernández"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13109
 msgid "La Cisterna"
-msgstr "La Cisterna"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05504
 msgid "La Cruz"
-msgstr "La Cruz"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06202
 msgid "La Estrella"
-msgstr "La Estrella"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13110
 msgid "La Florida"
-msgstr "La Florida"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13111
 msgid "La Granja"
-msgstr "La Granja"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL04104
 msgid "La Higuera"
-msgstr "La Higuera"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05401
 msgid "La Ligua"
-msgstr "La Ligua"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13112
 msgid "La Pintana"
-msgstr "La Pintana"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13113
 msgid "La Reina"
-msgstr "La Reina"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL04101
 msgid "La Serena"
-msgstr "La Serena"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL14201
 msgid "La Unión"
-msgstr "La Unión"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL14203
 msgid "Lago Ranco"
-msgstr "Lago Ranco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL11102
 msgid "Lago Verde"
-msgstr "Lago Verde"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL12102
 msgid "Laguna Blanca"
-msgstr "Laguna Blanca"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08304
 msgid "Laja"
-msgstr "Laja"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13302
 msgid "Lampa"
-msgstr "Lampa"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL14103
 msgid "Lanco"
-msgstr "Lanco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06107
 msgid "Las Cabras"
-msgstr "Las Cabras"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13114
 msgid "Las Condes"
-msgstr "Las Condes"
+msgstr ""
 
 #. module: l10n_cl_dpa
-#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_country_state_region___last_update
+#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_country_state_region____last_update
 msgid "Last Modified on"
 msgstr "Última modificación en"
 
 #. module: l10n_cl_dpa
-#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_country_state_region_write_uid
+#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_country_state_region__write_uid
 msgid "Last Updated by"
 msgstr "Última actualización de"
 
 #. module: l10n_cl_dpa
-#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_country_state_region_write_date
+#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_country_state_region__write_date
 msgid "Last Updated on"
 msgstr "Última actualización en"
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09108
 msgid "Lautaro"
-msgstr "Lautaro"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08201
 msgid "Lebu"
-msgstr "Lebu"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07303
 msgid "Licantén"
-msgstr "Licantén"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05505
 msgid "Limache"
-msgstr "Limache"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07401
 msgid "Linares"
-msgstr "Linares"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06203
 msgid "Litueche"
-msgstr "Litueche"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10107
 msgid "Llanquihue"
-msgstr "Llanquihue"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05703
 msgid "Llay Llay"
-msgstr "Llay Llay"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13115
 msgid "Lo Barnechea"
-msgstr "Lo Barnechea"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13116
 msgid "Lo Espejo"
-msgstr "Lo Espejo"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13117
 msgid "Lo Prado"
-msgstr "Lo Prado"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06304
 msgid "Lolol"
-msgstr "Lolol"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09109
 msgid "Loncoche"
-msgstr "Loncoche"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07403
 msgid "Longaví"
-msgstr "Longaví"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09205
 msgid "Lonquimay"
-msgstr "Lonquimay"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08206
 msgid "Los Alamos"
-msgstr "Los Alamos"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05301
 msgid "Los Andes"
-msgstr "Los Andes"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08301
 msgid "Los Angeles"
-msgstr "Los Angeles"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL14104
 msgid "Los Lagos"
-msgstr "Los Lagos"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10106
 msgid "Los Muermos"
-msgstr "Los Muermos"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09206
 msgid "Los Sauces"
-msgstr "Los Sauces"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL04203
 msgid "Los Vilos"
-msgstr "Los Vilos"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08106
 msgid "Lota"
-msgstr "Lota"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09207
 msgid "Lumaco"
-msgstr "Lumaco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06108
 msgid "Machalí"
-msgstr "Machalí"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13118
 msgid "Macul"
-msgstr "Macul"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13119
 msgid "Maipú"
-msgstr "Maipú"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06109
 msgid "Malloa"
-msgstr "Malloa"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06204
 msgid "Marchihue"
-msgstr "Marchihue"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL14106
 msgid "Mariquina"
-msgstr "Mariquina"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL02302
 msgid "María Elena"
-msgstr "María Elena"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13504
 msgid "María Pinto"
-msgstr "María Pinto"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07105
 msgid "Maule"
-msgstr "Maule"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10108
 msgid "Maullín"
-msgstr "Maullín"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL02102
 msgid "Mejillones"
-msgstr "Mejillones"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09110
 msgid "Melipeuco"
-msgstr "Melipeuco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13501
 msgid "Melipilla"
-msgstr "Melipilla"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07304
 msgid "Molina"
-msgstr "Molina"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL04303
 msgid "Monte Patria"
-msgstr "Monte Patria"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06110
 msgid "Mostazal"
-msgstr "Mostazal"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08305
 msgid "Mulchén"
-msgstr "Mulchén"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL14105
 msgid "Máfil"
-msgstr "Máfil"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08306
 msgid "Nacimiento"
-msgstr "Nacimiento"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06305
 msgid "Nancagua"
-msgstr "Nancagua"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL12401
 msgid "Natales"
-msgstr "Natales"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06205
 msgid "Navidad"
-msgstr "Navidad"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08307
 msgid "Negrete"
-msgstr "Negrete"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08408
 msgid "Ninhue"
-msgstr "Ninhue"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05506
 msgid "Nogales"
-msgstr "Nogales"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09111
 msgid "Nueva Imperial"
-msgstr "Nueva Imperial"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL11302
 msgid "Ohiggins"
-msgstr "Ohiggins"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06111
 msgid "Olivar"
-msgstr "Olivar"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL02202
 msgid "Ollague"
-msgstr "Ollague"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05507
 msgid "Olmué"
-msgstr "Olmué"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10301
 msgid "Osorno"
-msgstr "Osorno"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL04301
 msgid "Ovalle"
-msgstr "Ovalle"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13604
 msgid "Padre Hurtado"
-msgstr "Padre Hurtado"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09112
 msgid "Padre Las Casas"
-msgstr "Padre Las Casas"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL04105
 msgid "Paihuano"
-msgstr "Paihuano"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL14107
 msgid "Paillaco"
-msgstr "Paillaco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13404
 msgid "Paine"
-msgstr "Paine"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10404
 msgid "Palena"
-msgstr "Palena"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06306
 msgid "Palmilla"
-msgstr "Palmilla"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL14108
 msgid "Panguipulli"
-msgstr "Panguipulli"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05704
 msgid "Panquehue"
-msgstr "Panquehue"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05403
 msgid "Papudo"
-msgstr "Papudo"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06206
 msgid "Paredones"
-msgstr "Paredones"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07404
 msgid "Parral"
-msgstr "Parral"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13121
 msgid "Pedro Aguirre Cerda"
-msgstr "Pedro Aguirre Cerda"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07106
 msgid "Pelarco"
-msgstr "Pelarco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07203
 msgid "Pelluhue"
-msgstr "Pelluhue"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08410
 msgid "Pemuco"
-msgstr "Pemuco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07107
 msgid "Pencahue"
-msgstr "Pencahue"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08107
 msgid "Penco"
-msgstr "Penco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06307
 msgid "Peralillo"
-msgstr "Peralillo"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09113
 msgid "Perquenco"
-msgstr "Perquenco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05404
 msgid "Petorca"
-msgstr "Petorca"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06112
 msgid "Peumo"
-msgstr "Peumo"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13605
 msgid "Peñaflor"
-msgstr "Peñaflor"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13122
 msgid "Peñalolén"
-msgstr "Peñalolén"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL01405
 msgid "Pica"
-msgstr "Pica"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06113
 msgid "Pichidegua"
-msgstr "Pichidegua"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06201
 msgid "Pichilemu"
-msgstr "Pichilemu"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08411
 msgid "Pinto"
-msgstr "Pinto"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13202
 msgid "Pirque"
-msgstr "Pirque"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09114
 msgid "Pitrufquén"
-msgstr "Pitrufquén"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06308
 msgid "Placilla"
-msgstr "Placilla"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08412
 msgid "Portezuelo"
-msgstr "Portezuelo"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL12301
 msgid "Porvenir"
-msgstr "Porvenir"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL01401
 msgid "Pozo Almonte"
-msgstr "Pozo Almonte"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL12302
 msgid "Primavera"
-msgstr "Primavera"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13123
 msgid "Providencia"
-msgstr "Providencia"
+msgstr ""
 
 #. module: l10n_cl_dpa
-#: model:ir.ui.view,arch_db:l10n_cl_dpa.cl_partner_address_form
+#: model_terms:ir.ui.view,arch_db:l10n_cl_dpa.cl_partner_address_form
 msgid "Province"
-msgstr "Provincia"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05105
 msgid "Puchuncaví"
-msgstr "Puchuncaví"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09115
 msgid "Pucón"
-msgstr "Pucón"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13124
 msgid "Pudahuel"
-msgstr "Pudahuel"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13201
 msgid "Puente Alto"
-msgstr "Puente Alto"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10101
 msgid "Puerto Montt"
-msgstr "Puerto Montt"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10302
 msgid "Puerto Octay"
-msgstr "Puerto Octay"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10109
 msgid "Puerto Varas"
-msgstr "Puerto Varas"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06309
 msgid "Pumanque"
-msgstr "Pumanque"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL04304
 msgid "Punitaqui"
-msgstr "Punitaqui"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL12101
 msgid "Punta Arenas"
-msgstr "Punta Arenas"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10206
 msgid "Puqueldón"
-msgstr "Puqueldón"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10303
 msgid "Purranque"
-msgstr "Purranque"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09208
 msgid "Purén"
-msgstr "Purén"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05705
 msgid "Putaendo"
-msgstr "Putaendo"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL15201
 msgid "Putre"
-msgstr "Putre"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10304
 msgid "Puyehue"
-msgstr "Puyehue"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10207
 msgid "Queilén"
-msgstr "Queilén"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10208
 msgid "Quellón"
-msgstr "Quellón"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10209
 msgid "Quemchi"
-msgstr "Quemchi"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08308
 msgid "Quilaco"
-msgstr "Quilaco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13125
 msgid "Quilicura"
-msgstr "Quilicura"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08309
 msgid "Quilleco"
-msgstr "Quilleco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05501
 msgid "Quillota"
-msgstr "Quillota"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08413
 msgid "Quillón"
-msgstr "Quillón"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05106
 msgid "Quilpué"
-msgstr "Quilpué"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10210
 msgid "Quinchao"
-msgstr "Quinchao"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13126
 msgid "Quinta Normal"
-msgstr "Quinta Normal"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06114
 msgid "Quinta de Tilcoco"
-msgstr "Quinta de Tilcoco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05107
 msgid "Quintero"
-msgstr "Quintero"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08414
 msgid "Quirihue"
-msgstr "Quirihue"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06101
 msgid "Rancagua"
-msgstr "Rancagua"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08415
 msgid "Ranquil"
-msgstr "Ranquil"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07305
 msgid "Rauco"
-msgstr "Rauco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13127
 msgid "Recoleta"
-msgstr "Recoleta"
+msgstr ""
 
 #. module: l10n_cl_dpa
-#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_country_state_l10n_cl_region_id
+#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_country_state__l10n_cl_region_id
+#: model_terms:ir.ui.view,arch_db:l10n_cl_dpa.view_region_state_tree
 msgid "Region"
-msgstr "Región"
+msgstr ""
 
 #. module: l10n_cl_dpa
-#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_country_state_region_code
+#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_country_state_region__code
 msgid "Region Code"
-msgstr "Código de Region"
+msgstr ""
 
 #. module: l10n_cl_dpa
-#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_country_state_region_name
+#: model:ir.model.fields,field_description:l10n_cl_dpa.field_res_country_state_region__name
 msgid "Region Name"
-msgstr "Nombre de Región"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09209
 msgid "Renaico"
-msgstr "Renaico"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13128
 msgid "Renca"
-msgstr "Renca"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06115
 msgid "Rengo"
-msgstr "Rengo"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06116
 msgid "Requinoa"
-msgstr "Requinoa"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07405
 msgid "Retiro"
-msgstr "Retiro"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05303
 msgid "Rinconada"
-msgstr "Rinconada"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07306
 msgid "Romeral"
-msgstr "Romeral"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL14204
 msgid "Río Bueno"
-msgstr "Río Bueno"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07108
 msgid "Río Claro"
-msgstr "Río Claro"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL04305
 msgid "Río Hurtado"
-msgstr "Río Hurtado"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL11402
 msgid "Río Ibáñez"
-msgstr "Río Ibáñez"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10305
 msgid "Río Negro"
-msgstr "Río Negro"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL12103
 msgid "Río Verde"
-msgstr "Río Verde"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09116
 msgid "Saavedra"
-msgstr "Saavedra"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07307
 msgid "Sagrada Familia"
-msgstr "Sagrada Familia"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL04204
 msgid "Salamanca"
-msgstr "Salamanca"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05601
 msgid "San Antonio"
-msgstr "San Antonio"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13401
 msgid "San Bernardo"
-msgstr "San Bernardo"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08416
 msgid "San Carlos"
-msgstr "San Carlos"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07109
 msgid "San Clemente"
-msgstr "San Clemente"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05304
 msgid "San Esteban"
-msgstr "San Esteban"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08417
 msgid "San Fabián"
-msgstr "San Fabián"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05701
 msgid "San Felipe"
-msgstr "San Felipe"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06301
 msgid "San Fernando"
-msgstr "San Fernando"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL12104
 msgid "San Gregorio"
-msgstr "San Gregorio"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08418
 msgid "San Ignacio"
-msgstr "San Ignacio"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07406
 msgid "San Javier"
-msgstr "San Javier"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13129
 msgid "San Joaquín"
-msgstr "San Joaquín"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13203
 msgid "San José de Maipo"
-msgstr "San José de Maipo"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10306
 msgid "San Juan de la Costa"
-msgstr "San Juan de la Costa"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13130
 msgid "San Miguel"
-msgstr "San Miguel"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08419
 msgid "San Nicolás"
-msgstr "San Nicolás"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL10307
 msgid "San Pablo"
-msgstr "San Pablo"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13505
 msgid "San Pedro"
-msgstr "San Pedro"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08108
 msgid "San Pedro De La Paz"
-msgstr "San Pedro De La Paz"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL02203
 msgid "San Pedro de Atacama"
-msgstr "San Pedro de Atacama"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07110
 msgid "San Rafael"
-msgstr "San Rafael"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13131
 msgid "San Ramón"
-msgstr "San Ramón"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08310
 msgid "San Rosendo"
-msgstr "San Rosendo"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06117
 msgid "San Vicente"
-msgstr "San Vicente"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08311
 msgid "Santa Bárbara"
-msgstr "Santa Bárbara"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06310
 msgid "Santa Cruz"
-msgstr "Santa Cruz"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08109
 msgid "Santa Juana"
-msgstr "Santa Juana"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05706
 msgid "Santa María"
-msgstr "Santa María"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13101
 msgid "Santiago"
-msgstr "Santiago"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05606
 msgid "Santo Domingo"
-msgstr "Santo Domingo"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL02103
 msgid "Sierra Gorda"
-msgstr "Sierra Gorda"
+msgstr ""
 
 #. module: l10n_cl_dpa
-#: model:ir.ui.view,arch_db:l10n_cl_dpa.cl_partner_address_form
+#: model:ir.model,name:l10n_cl_dpa.model_res_country_state_region
+msgid "State Region"
+msgstr ""
+
+#. module: l10n_cl_dpa
+#: model_terms:ir.ui.view,arch_db:l10n_cl_dpa.cl_partner_address_form
 msgid "Street..."
 msgstr "Calle..."
 
 #. module: l10n_cl_dpa
-#: model:ir.ui.view,arch_db:l10n_cl_dpa.cl_partner_address_form
+#: model_terms:ir.ui.view,arch_db:l10n_cl_dpa.cl_partner_address_form
 msgid "Street2..."
-msgstr "Calle2..."
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13601
 msgid "Talagante"
-msgstr "Talagante"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07101
 msgid "Talca"
-msgstr "Talca"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08110
 msgid "Talcahuano"
-msgstr "Talcahuano"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL02104
 msgid "Taltal"
-msgstr "Taltal"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09101
 msgid "Temuco"
-msgstr "Temuco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07308
 msgid "Teno"
-msgstr "Teno"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09117
 msgid "Teodoro Schmidt"
-msgstr "Teodoro Schmidt"
+msgstr ""
 
 #. module: l10n_cl_dpa
-#: model:ir.model.fields,help:l10n_cl_dpa.field_res_city_l10n_cl_code
+#: model:ir.model.fields,help:l10n_cl_dpa.field_res_city__l10n_cl_code
 msgid "The city code.\n"
 ""
-msgstr "The city code.\n"
-""
+msgstr ""
 
 #. module: l10n_cl_dpa
-#: model:ir.model.fields,help:l10n_cl_dpa.field_res_country_state_region_code
+#: model:ir.model.fields,help:l10n_cl_dpa.field_res_country_state_region__code
 msgid "The region code."
-msgstr "The region code."
+msgstr ""
 
 #. module: l10n_cl_dpa
-#: model:ir.model.fields,help:l10n_cl_dpa.field_res_country_state_region_name
+#: model:ir.model.fields,help:l10n_cl_dpa.field_res_country_state_region__name
 msgid "The state code."
 msgstr "El estado del código."
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL03103
 msgid "Tierra Amarilla"
-msgstr "Tierra Amarilla"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13303
 msgid "Til til"
-msgstr "Til til"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL12303
 msgid "Timaukel"
-msgstr "Timaukel"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08207
 msgid "Tirua"
-msgstr "Tirua"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL02301
 msgid "Tocopilla"
-msgstr "Tocopilla"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09118
 msgid "Toltén"
-msgstr "Toltén"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08111
 msgid "Tomé"
-msgstr "Tomé"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL12402
 msgid "Torres del Paine"
-msgstr "Torres del Paine"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL11303
 msgid "Tortel"
-msgstr "Tortel"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09210
 msgid "Traiguén"
-msgstr "Traiguén"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08420
 msgid "Trehuaco"
-msgstr "Trehuaco"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08312
 msgid "Tucapel"
-msgstr "Tucapel"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL14101
 msgid "Valdivia"
-msgstr "Valdivia"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL03301
 msgid "Vallenar"
-msgstr "Vallenar"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05101
 msgid "Valparaíso"
-msgstr "Valparaíso"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07309
 msgid "Vichuquén"
-msgstr "Vichuquén"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09211
 msgid "Victoria"
-msgstr "Victoria"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL04106
 msgid "Vicuña"
-msgstr "Vicuña"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09119
 msgid "Vilcún"
-msgstr "Vilcún"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07407
 msgid "Villa Alegre"
-msgstr "Villa Alegre"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05108
 msgid "Villa Alemana"
-msgstr "Villa Alemana"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL09120
 msgid "Villarrica"
-msgstr "Villarrica"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13132
 msgid "Vitacura"
-msgstr "Vitacura"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05109
 msgid "Viña del Mar"
-msgstr "Viña del Mar"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL07408
 msgid "Yerbas Buenas"
-msgstr "Yerbas Buenas"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08313
 msgid "Yumbel"
-msgstr "Yumbel"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08421
 msgid "Yungay"
-msgstr "Yungay"
+msgstr ""
 
 #. module: l10n_cl_dpa
-#: model:ir.ui.view,arch_db:l10n_cl_dpa.cl_partner_address_form
+#: model_terms:ir.ui.view,arch_db:l10n_cl_dpa.cl_partner_address_form
 msgid "ZIP"
 msgstr "C.P."
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL05405
 msgid "Zapallar"
-msgstr "Zapallar"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL06102
 msgid "l10n_cl_Codegua"
-msgstr "l10n_cl_Codegua"
-
-#. module: l10n_cl_dpa
-#: model:ir.model,name:l10n_cl_dpa.model_res_country_state_region
-msgid "res.country.state.region"
-msgstr "res.country.state.region"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL08409
 msgid "Ñiquén"
-msgstr "Ñiquén"
+msgstr ""
 
 #. module: l10n_cl_dpa
 #: model:res.city,name:l10n_cl_dpa.CL13120
 msgid "Ñuñoa"
-msgstr "Ñuñoa"
-
+msgstr ""
