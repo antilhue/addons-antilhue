@@ -11,7 +11,7 @@ class TestSaleOrder(TransactionCase):
         self.partner_id = self.env.ref('base.res_partner_2')
         self.product_lapto = self.env.ref('product.product_product_25')
         self.product_lapto.write({'length': 5, 'height': 5, 'width': 5, 'weight': 0.5})
-        self.product_service = self.env.ref('product.product_product_11c')
+        self.product_service = self.env.ref('sale.advance_product_0')
         self.product_service.write({'type': 'service'})
         self.product_imac = self.env.ref('product.product_product_8')
         self.product_imac.write({'length': 0, 'height': 0, 'width': 0, 'weight': 0})
