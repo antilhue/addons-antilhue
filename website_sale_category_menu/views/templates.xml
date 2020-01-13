@@ -2,19 +2,19 @@
 <odoo>
     <!-- Inherited templates -->
     <template id="menu_category" inherit_id="website.layout" name="Category Menu">
-        <xpath expr="//header" position="inside">
-            <div class="navbar navbar-default hidden-xs">
+        <xpath expr="//header" position="after">
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
                 <div class="container">
                     <t t-call="website_sale_category_menu.categories_header"/>
                 </div>
-            </div>
+            </nav>
         </xpath>
     </template>
 
     <template id="categories_header" name="Header Categories">
         <t t-set="categories" t-value="categories or request.env['product.public.category'].search([('parent_id', '=', False)])"/>
         <t t-if="categories">
-            <div class="nav-categ">
+            <div class="nav-categ w-100">
                 <div><div class="container-opacacity"></div></div>
                 <div class="categories">
                     <ul class="nav navbar-nav navbar-caregories">
@@ -28,9 +28,9 @@
     </template>
 
     <template id="option_collapse_categories_recursive" name="Collapse Category Recursive">
-        <li t-att-class="'dropdown mega-dropdown' if not categ.parent_id else 'dropdown-header'">
-            <a t-att-href="'/shop/category/' + slug(categ)" t-field="categ.name" t-if="not categ.child_id"></a>
-            <a t-field="categ.name" t-else=""></a>
+        <li t-att-class="'nav-item dropdown mega-dropdown' if not categ.parent_id else 'dropdown-header'">
+            <a t-att-href="'/shop/category/' + slug(categ)" t-field="categ.name" t-if="not categ.child_id" t-att-class="'nav-link' if not categ.parent_id else ''"></a>
+            <a t-field="categ.name" t-else="" t-att-class="'nav-link' if not categ.parent_id else ''"></a>
             <ul t-if="categ.child_id" t-att-class="'dropdown-menu mega-dropdown-menu row' if not categ.parent_id else None">
                 <t t-foreach="categ.child_id" t-as="categ">
                     <t t-call="website_sale_category_menu.option_collapse_categories_recursive" />
