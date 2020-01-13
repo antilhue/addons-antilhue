@@ -22,7 +22,6 @@ class CustomerPortal(CustomerPortal):
         reference = post.get('client_order_ref', '')
         if not file:
             return werkzeug.utils.redirect("/my/orders/%s?access_token=%s" % (order_id, access_token))
-        import pdb; pdb.set_trace()
 
         attachment_value = {
             'name': file.filename,
@@ -44,8 +43,4 @@ class CustomerPortal(CustomerPortal):
             'author_id': request.env.user.partner_id.id
         }
         request.env['mail.message'].sudo().create(values)
-        return {
-            'force_refresh': True,
-            'redirect_url': order_sudo.get_portal_url(query_string='&message=sign_ok'),
-        }
-        return werkzeug.utils.redirect("/my/orders/%s?message=attach_ok&access_token=%s" % (order_id, access_token))
+        return werkzeug.utils.redirect(order_sudo.get_portal_url(query_string='&message=attach_ok'))

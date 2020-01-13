@@ -10,7 +10,7 @@
     "external_dependencies": {
     },
     "data": [
-        'views/website_quote_templates.xml'
+        'views/sale_quote_templates.xml'
     ],
     'installable': True,
 }

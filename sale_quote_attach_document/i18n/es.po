@@ -1,0 +1,101 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* sale_quote_attach_document
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e-20200107\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-13 12:57+0000\n"
+"PO-Revision-Date: 2020-01-13 12:57+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_quote_attach_document
+#: model_terms:ir.ui.view,arch_db:sale_quote_attach_document.attach_document
+msgid "&amp;times;"
+msgstr ""
+
+#. module: sale_quote_attach_document
+#: model_terms:ir.ui.view,arch_db:sale_quote_attach_document.attach_document
+msgid "<i class=\"fa fa-paperclip\"/> Attach Document"
+msgstr "<i class=\"fa fa-paperclip\"/> Adjuntar documento"
+
+#. module: sale_quote_attach_document
+#: code:addons/sale_quote_attach_document/controllers/main.py:36
+#, python-format
+msgid "<p> Reference:  %s </p> <p> %s </p>"
+msgstr ""
+
+#. module: sale_quote_attach_document
+#: model_terms:ir.ui.view,arch_db:sale_quote_attach_document.attach_document
+msgid "Attach"
+msgstr "Adjuntar"
+
+#. module: sale_quote_attach_document
+#: model_terms:ir.ui.view,arch_db:sale_quote_attach_document.attach_document
+msgid "Attach any necessary document to validate your order"
+msgstr "Adjuntar cualquier documento necesario para validar su orden."
+
+#. module: sale_quote_attach_document
+#: model_terms:ir.ui.view,arch_db:sale_quote_attach_document.attach_document
+msgid "Attach any necessary document to validate your order (e.g.: purchase order, deposit or transfer voucher, etc.)"
+msgstr "Adjuntar cualquier documento necesario para validar su orden (e.g.: Orden de compras, comprobante de deposito o transferencia, etc.)"
+
+#. module: sale_quote_attach_document
+#: model_terms:ir.ui.view,arch_db:sale_quote_attach_document.attach_document
+msgid "Attach document for order validation"
+msgstr "Adjuntar documento para validar su orden"
+
+#. module: sale_quote_attach_document
+#: model_terms:ir.ui.view,arch_db:sale_quote_attach_document.attach_document
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: sale_quote_attach_document
+#: model_terms:ir.ui.view,arch_db:sale_quote_attach_document.attach_document
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: sale_quote_attach_document
+#: model_terms:ir.ui.view,arch_db:sale_quote_attach_document.attach_document
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: sale_quote_attach_document
+#: model_terms:ir.ui.view,arch_db:sale_quote_attach_document.attach_document
+msgid "Your document has been successfully sent! We will review the documentation sent to validate the order.\n"
+"               You can"
+msgstr "Su documento a sido enviado correctamente. Estaremos revisando la documentación enviada para validar la orden.\n"
+"               No dude en "
+
+#. module: sale_quote_attach_document
+#: model_terms:ir.ui.view,arch_db:sale_quote_attach_document.attach_document
+msgid "Your feedback..."
+msgstr "Sus comentarios..."
+
+#. module: sale_quote_attach_document
+#: model_terms:ir.ui.view,arch_db:sale_quote_attach_document.attach_document
+msgid "attach"
+msgstr "adjuntar"
+
+#. module: sale_quote_attach_document
+#: model_terms:ir.ui.view,arch_db:sale_quote_attach_document.attach_document
+msgid "cancel"
+msgstr "cancelar"
+
+#. module: sale_quote_attach_document
+#: model_terms:ir.ui.view,arch_db:sale_quote_attach_document.attach_document
+msgid "contact us"
+msgstr "contactarnos"
+
+#. module: sale_quote_attach_document
+#: model_terms:ir.ui.view,arch_db:sale_quote_attach_document.attach_document
+msgid "for\n"
+"               any questions."
+msgstr "para\n"
+"               cualquier pregunta."
