@@ -1,7 +1,7 @@
 {
     'name': 'Category Menu',
     'category': 'Website',
-    'version': '1.0.0',
+    'version': '12.0.1.0.0',
     'depends': ['website_sale'],
     'data': [
         'views/assets.xml',
