@@ -1,7 +1,7 @@
 {
     "name": "Quote in e-commerce",
     "summary": "This module allows the user to make a quote from the e-commerce",
-    "version": "11.0.0.0.1",
+    "version": '12.0.1.0.0',
     "category": "Website",
     "license": "AGPL-3",
     "depends": [
