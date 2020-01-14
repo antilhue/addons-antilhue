@@ -2,45 +2,15 @@
 <odoo>
     <template id="payment_quote" inherit_id="website_sale.payment" name="Only Quote">
         <xpath expr="//div[@id='payment_method']" position="inside">
-            <div class="col-sm-8">
-                <form target="_self" action="/shop/quote" method="post" class="pull-right">
-                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
-                    <a class="btn btn-primary btn-lg mb8 mt8 a-submit">
-                        Quote
-                    </a>
-                </form>
-            </div>
+            <form target="_self" action="/shop/quote" method="post" class="pull-right">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                <button string="quote" class="btn btn-primary mb8 mt8" type="submit">
+                    Quote
+                    <i class="fa fa-chevron-right"></i>
+                </button>
+            </form>
         </xpath>
     </template>
-
-    <template id="confirmation" inherit_id="website_sale.confirmation">
-        <xpath expr="//div[hasclass('thanks_msg')]/h2"
-               position="inside">
-            <a style="margin-right:10px;" class="btn btn-primary pull-right hidden-xs" href="/shop/quote/redirect" target="_self"> Go to order <i class="fa fa-arrow-right"/></a>
-        </xpath>
-
-        <xpath expr="//t[@t-call='website_sale.payment_confirmation_status']"
-               position="after">
-            <div class="alert alert-info" role="alert"
-                 t-if="not order.payment_acquirer_id">
-                We send the quote to your email, any question do not hesitate to contact us.
-            </div>
-        </xpath>
-        <!-- Hide payment related info if skip payment step -->
-        <xpath expr="//t[@t-call='website_sale.payment_confirmation_status']"
-               position="attributes">
-            <attribute name="t-if">order.payment_acquirer_id</attribute>
-        </xpath>
-        <xpath expr="(//div[hasclass('oe_cart')]//h3)[2]"
-               position="attributes">
-            <attribute name="t-if">order.payment_acquirer_id</attribute>
-        </xpath>
-        <xpath expr="(//div[hasclass('oe_cart')]//table[hasclass('table')])[2]"
-               position="attributes">
-            <attribute name="t-if">order.payment_acquirer_id</attribute>
-        </xpath>
-    </template>
-
 
     <template id="order_state_message">
         <p>Your order is waiting manual confirmation.</p><br/>
