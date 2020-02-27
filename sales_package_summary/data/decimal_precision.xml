@@ -2,6 +2,6 @@
 <odoo noupdate="1">
     <record id="decimal_payment" model="decimal.precision">
         <field name="name">Volumen</field>
-        <field name="digits">6</field>
+        <field name="digits" eval="6"/>
     </record>
 </odoo>

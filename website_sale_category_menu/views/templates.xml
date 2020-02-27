@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <!-- Inherited templates -->
-    <template id="menu_category" inherit_id="website.layout" name="Category Menu">
+    <template id="menu_category" inherit_id="website.layout" customize_show="True" name="Show Categories Menu">
         <xpath expr="//header" position="after">
             <nav class="navbar navbar-expand-md navbar-light bg-light">
                 <div class="container">

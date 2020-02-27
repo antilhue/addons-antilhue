@@ -2,7 +2,7 @@
 <odoo>
    <template id="attach_document" name="Allow Attach document" inherit_id="sale.sale_order_portal_template">
       <xpath expr="//a[@data-target='#modalaccept'][last()]" position="after">
-          <a class="btn btn-primary btn-block mb8" data-toggle="modal" href="#modalattach" title="Attach any necessary document to validate your order">
+          <a class="btn btn-primary btn-block mb8" data-toggle="modal" data-target="#modalattach" title="Attach any necessary document to validate your order">
               <i class="fa fa-paperclip"></i> Attach Document
           </a>
       </xpath>
