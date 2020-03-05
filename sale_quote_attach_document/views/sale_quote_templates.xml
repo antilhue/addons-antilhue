@@ -13,8 +13,8 @@
                     <form id="attach" method="POST" t-attf-action="/my/orders/#{sale_order.id}/attach?access_token=#{sale_order.access_token}" class="modal-content" enctype="multipart/form-data">
                         <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&amp;times;</button>
                             <h4 class="modal-title">Attach document for order validation</h4>
+                            <button type="button" class="close" data-dismiss="modal">&amp;times;</button>
                         </div>
                         <div class="modal-body" id="attach-document-body">
                             <p>
