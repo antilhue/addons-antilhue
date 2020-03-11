@@ -19,8 +19,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website_sale_quote.confirmation_order_error
 msgid "<strong>Error!</strong> An error occurred trying to\n"
 "                        confirm the sale order."
-msgstr "<strong> ¡Error! </strong> Se produjo un error al intentar \ n "
-"confirma el pedido de venta."
+msgstr "<strong> ¡Error! <strong>Error!</strong> Ha ocurrido un error
+"                        al confirmar la orden."
 
 #. module: website_sale_quote
 #: model_terms:ir.ui.view,arch_db:website_sale_quote.payment_quote
