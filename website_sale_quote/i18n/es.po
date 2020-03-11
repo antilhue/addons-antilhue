@@ -37,7 +37,7 @@ msgstr "Tienda - Confirmación - Error"
 #. module: website_sale_quote
 #: model_terms:ir.ui.view,arch_db:website_sale_quote.order_state_message
 msgid "Your order is waiting manual confirmation."
-msgstr "Su pedido está en espera de confirmación.."
+msgstr "Su pedido está en espera de confirmación."
 
 #. module: website_sale_quote
 #: model_terms:ir.ui.view,arch_db:website_sale_quote.payment_quote
