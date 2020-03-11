@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 11.0+e-20190315\n"
+"Project-Id-Version: Odoo Server 12.0+e-20200130\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-25 13:30+0000\n"
-"PO-Revision-Date: 2019-04-25 13:30+0000\n"
+"POT-Creation-Date: 2020-03-11 12:17+0000\n"
+"PO-Revision-Date: 2020-03-11 12:17+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,34 +16,30 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: website_sale_quote
-#: model:ir.ui.view,arch_db:website_sale_quote.confirmation_order_error
+#: model_terms:ir.ui.view,arch_db:website_sale_quote.confirmation_order_error
 msgid "<strong>Error!</strong> An error occurred trying to\n"
 "                        confirm the sale order."
-msgstr "<strong>Error!</strong> Ha ocurrido un error\n"
-"                        al confirmar la orden."
+msgstr "<strong> ¡Error! </strong> Se produjo un error al intentar \ n "
+"confirma el pedido de venta."
 
 #. module: website_sale_quote
-#: model:ir.ui.view,arch_db:website_sale_quote.confirmation
-msgid "Go to order <i class=\"fa fa-arrow-right\"/>"
-msgstr "Ir a pedido <i class=\"fa fa-arrow-right\"/>"
+#: model_terms:ir.ui.view,arch_db:website_sale_quote.payment_quote
+msgid "Quote\n"
+"                    <i class=\"fa fa-chevron-right\"/>"
+msgstr "Citar\n"
+"                    <i class=\"fa fa-chevron-right\"/>"
 
 #. module: website_sale_quote
-#: model:ir.ui.view,arch_db:website_sale_quote.payment_quote
-msgid "Quote"
-msgstr "Cotizar"
-
-#. module: website_sale_quote
-#: model:ir.ui.view,arch_db:website_sale_quote.confirmation_order_error
+#: model_terms:ir.ui.view,arch_db:website_sale_quote.confirmation_order_error
 msgid "Shop - Confirmation - Error"
-msgstr "Shop - Confirmation - Error"
+msgstr "Tienda - Confirmación - Error"
 
 #. module: website_sale_quote
-#: model:ir.ui.view,arch_db:website_sale_quote.confirmation
-msgid "We send the quote to your email, any question do not hesitate to contact us."
-msgstr "Le enviamos la cotizacion a su correo electronico, cualquier pregunta no dude en contactarnos"
-
-#. module: website_sale_quote
-#: model:ir.ui.view,arch_db:website_sale_quote.order_state_message
+#: model_terms:ir.ui.view,arch_db:website_sale_quote.order_state_message
 msgid "Your order is waiting manual confirmation."
-msgstr "Su pedido está en espera de confirmación."
+msgstr "Su pedido está esperando confirmación manual."
 
+#. module: website_sale_quote
+#: model_terms:ir.ui.view,arch_db:website_sale_quote.payment_quote
+msgid "quote"
+msgstr "citar"
