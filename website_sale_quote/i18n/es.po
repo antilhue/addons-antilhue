@@ -26,7 +26,7 @@ msgstr "<strong> ¡Error! </strong> Se produjo un error al intentar \ n "
 #: model_terms:ir.ui.view,arch_db:website_sale_quote.payment_quote
 msgid "Quote\n"
 "                    <i class=\"fa fa-chevron-right\"/>"
-msgstr "Citar\n"
+msgstr "Cotizar\n"
 "                    <i class=\"fa fa-chevron-right\"/>"
 
 #. module: website_sale_quote
@@ -37,9 +37,9 @@ msgstr "Tienda - Confirmación - Error"
 #. module: website_sale_quote
 #: model_terms:ir.ui.view,arch_db:website_sale_quote.order_state_message
 msgid "Your order is waiting manual confirmation."
-msgstr "Su pedido está esperando confirmación manual."
+msgstr "Su pedido está en espera de confirmación.."
 
 #. module: website_sale_quote
 #: model_terms:ir.ui.view,arch_db:website_sale_quote.payment_quote
 msgid "quote"
-msgstr "citar"
+msgstr "cotizar"
