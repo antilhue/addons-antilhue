@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="payment_quote" inherit_id="website_sale.payment" name="Only Quote">
-        <xpath expr="//div[@id='payment_method']" position="inside">
-            <form target="_self" action="/shop/quote" method="post" class="pull-right">
-                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
-                <button string="quote" class="btn btn-primary mb8 mt8" type="submit">
-                    Quote
-                    <i class="fa fa-chevron-right"></i>
-                </button>
-            </form>
+        <xpath expr="//div[@id='payment_method']" position="after">
+            <div id="quotation_method">
+                <form target="_self" action="/shop/quote" method="post" class="pull-right">
+                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                    <button string="quote" class="btn btn-primary mb-1 mt-3" type="submit">
+                        Quote
+                        <i class="fa fa-chevron-right"></i>
+                    </button>
+                </form>
+            </div>
         </xpath>
     </template>
 
