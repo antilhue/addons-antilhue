@@ -33,14 +33,14 @@ class CustomerPortal(CustomerPortal):
         attachment_id = request.env['ir.attachment'].sudo().create(attachment_value)
 
         values = {
-            'body': _("<p> Reference:  %s </p> <p> %s </p>") % (reference, message),
-            'model': 'sale.order',
-            'message_type': 'comment',
             'no_auto_thread': False,
             'res_id': order_id,
-            'subtype_id': request.env.ref('mail.mt_comment').id,
-            'attachment_ids': [(6, 0, [attachment_id.id])],
-            'author_id': request.env.user.partner_id.id
+            'author_id': request.env.user.partner_id.id,
+            'partner_ids': order_sudo.user_id.sudo().partner_id.ids
         }
-        request.env['mail.message'].sudo().create(values)
+        order_sudo.with_context(mail_create_nosubscribe=True).message_post(
+            body=_("<p> Reference:  %s </p> <p> %s </p>") % (reference, message),
+            attachment_ids=[attachment_id.id],
+            subtype=request.env.ref('mail.mt_comment'),
+            message_type='comment', **values)
         return werkzeug.utils.redirect(order_sudo.get_portal_url(query_string='&message=attach_ok'))
