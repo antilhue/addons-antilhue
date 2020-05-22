@@ -11,7 +11,7 @@
 <div style="padding:0px;width:600px;margin:auto;background: #FFFFFF repeat top /100%;color:#777777">
     <p>Dear,</p>
     <p>
-       The user ${object.name} has requested to sign up on the site. The request is awaiting your approval. <br/>
+       The user ${object.name} has requested to sign up on the site from ${ctx.get("city", "")} - ${ctx.get("country_name", "")}. The request is awaiting your approval. <br/>
        <a href=${object.get_url_view_user()}>Click here</a> to go to the user config.
     </p>
     <p>Best regards,</p>

@@ -40,7 +40,7 @@ class ResUsers(models.Model):
                     lang=user.lang).send_mail(user.id, force_send=True, raise_exception=True)
 
     @api.multi
-    def notify_admin_user_signup(self):
+    def notify_admin_user_signup(self, values):
         config = self.env['ir.config_parameter'].sudo()
         notify_user_id = safe_eval(config.get_param("notify_signup_user_ids", "[]"))
         if not notify_user_id:
@@ -54,7 +54,7 @@ class ResUsers(models.Model):
             url = user.get_url_view_user()
             with self.env.cr.savepoint():
                 template.with_context(
-                    lang=user.company_id.partner_id.lang, url=url).send_mail(user.id, force_send=True, raise_exception=True)
+                    lang=user.company_id.partner_id.lang, url=url, city=values.get('city', ''), country_name=values.get('country_name', '')).send_mail(user.id, force_send=True, raise_exception=True)
             _logger.info("Notify Sing Up sent for user <%s> to <%s>", user.login, user.email)
 
     @api.multi
@@ -69,13 +69,16 @@ class ResUsers(models.Model):
     @api.model
     def signup(self, values, token=None):
         cr, login, password = super(ResUsers, self).signup(values, token)
+        if token:
+            return cr, login, password
+
         users = self.search([('login', '=', login)])
         if not users:
             users = self.search([('email', '=', login)])
         if len(users) != 1:
             raise Exception(_('Notify Sign Up: invalid username or email'))
 
-        users.notify_admin_user_signup()
+        users.notify_admin_user_signup(values.get("geoip", {}))
 
         return cr, login, password
 
