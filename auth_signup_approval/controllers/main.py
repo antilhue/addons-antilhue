@@ -61,6 +61,7 @@ class SignupVerifyEmail(AuthSignupHome):
     def create_user(values, token, login):
         sudo_users = (request.env["res.users"]
                       .with_context(create_user=True).sudo())
+        values.update({'geoip': request.session.get('geoip', {})})
         try:
             with request.cr.savepoint():
                 sudo_users.signup(values, token)
