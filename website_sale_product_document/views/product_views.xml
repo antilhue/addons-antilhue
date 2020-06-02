@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_template_common_form_view_attachment" model="ir.ui.view">
+        <field name="name">product.template.common.form.view.attachment</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='shop']" position="inside">
+                <group name="product_documents" string="Product Documents">
+                    <field name="document_website_ids" nolabel="1" mode="tree">
+                        <tree string="Product Documents" editable="bottom" widget="one2many_list" options="{'no_create': True}">
+                            <field name="sequence"  widget="handle"/>
+                            <field name="attachment_id" string="File" required='1'/>
+                        </tree>
+                    </field>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
