@@ -15,3 +15,4 @@ class ProductDocument(models.Model):
     name = fields.Char(related='attachment_id.name')
     attachment_id = fields.Many2one('ir.attachment', string='File', domain=[('res_id', '=', False),('mimetype','=','application/pdf')])
     product_id = fields.Many2one('product.template', string='Product Reference', required=True, ondelete='cascade', index=True, copy=False)
+    description = fields.Text(related='attachment_id.description')
