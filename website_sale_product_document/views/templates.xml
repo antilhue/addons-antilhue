@@ -7,7 +7,7 @@
                 <span><strong>Related Documents:</strong></span>
                 <br/>
                 <t t-foreach="product.document_website_ids" t-as="document">
-                    <a t-att-href="'/product/download/document?document_id=%i' % document.id">
+                    <a t-att-href="'/product/download/document?document_id=%i' % document.id" target="_blank">
                         <span t-esc="document.name" class="fa fa-download" />
                     </a>
                 </t>
