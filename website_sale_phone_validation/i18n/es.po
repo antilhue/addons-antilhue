@@ -1,0 +1,22 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* website_sale_phone_validation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e-20200528\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-10 16:58+0000\n"
+"PO-Revision-Date: 2020-07-10 16:58+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: website_sale_phone_validation
+#: code:addons/website_sale_phone_validation/controllers/main.py:26
+#, python-format
+msgid "Invalid Phone! Please enter a valid phone."
+msgstr "El número de teléfono no es válido. Por favor revisar o ingresar un número válido"
