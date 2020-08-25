@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0+e-20200107\n"
+"Project-Id-Version: Odoo Server 12.0+e-20200729\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-09 20:29+0000\n"
-"PO-Revision-Date: 2020-01-09 20:29+0000\n"
+"POT-Creation-Date: 2020-08-25 16:23+0000\n"
+"PO-Revision-Date: 2020-08-25 16:23+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -88,7 +88,7 @@ msgstr "\n"
 "</div>"
 
 #. module: auth_signup_approval
-#: code:addons/auth_signup_approval/controllers/main.py:72
+#: code:addons/auth_signup_approval/controllers/main.py:73
 #, python-format
 msgid "Another user is already registered using this email address."
 msgstr "Otro usuario ya está registrado usando esta dirección de correo electrónico."
@@ -107,6 +107,11 @@ msgstr "Aprobar"
 #: selection:res.users,approval_status:0
 msgid "Approved"
 msgstr "Aprobado"
+
+#. module: auth_signup_approval
+#: model_terms:ir.ui.view,arch_db:auth_signup_approval.message_wait_by_approval
+msgid "Back to Login"
+msgstr "Volver al Inicio de sesión"
 
 #. module: auth_signup_approval
 #: model:ir.model,name:auth_signup_approval.model_res_config_settings
@@ -134,7 +139,7 @@ msgid "Notified users when a user sign up"
 msgstr "Usuarios notificados cuando un usuario se registra"
 
 #. module: auth_signup_approval
-#: code:addons/auth_signup_approval/models/res_users.py:76
+#: code:addons/auth_signup_approval/models/res_users.py:79
 #, python-format
 msgid "Notify Sign Up: invalid username or email"
 msgstr "Notificacion de registro: nombre de usuario o email invalido"
@@ -162,7 +167,7 @@ msgid "Rejected"
 msgstr "Rechazado"
 
 #. module: auth_signup_approval
-#: code:addons/auth_signup_approval/models/res_users.py:90
+#: code:addons/auth_signup_approval/models/res_users.py:93
 #, python-format
 msgid "Reset password: invalid username or email"
 msgstr "Restablecer Contraseña: usuario o correo invalido"
@@ -173,7 +178,7 @@ msgid "Send email for these users when a user sign up"
 msgstr "Enviar correo electrónico a estos usuarios cuando un usuario se registre"
 
 #. module: auth_signup_approval
-#: code:addons/auth_signup_approval/controllers/main.py:75
+#: code:addons/auth_signup_approval/controllers/main.py:76
 #, python-format
 msgid "Something went wrong, please try again later or contact us."
 msgstr "Algo ha ido mal, por favor inténtelo de nuevo más tarde o contáctenos."
@@ -184,8 +189,7 @@ msgid "Status"
 msgstr "Estado"
 
 #. module: auth_signup_approval
-#: code:addons/auth_signup_approval/controllers/main.py:100
-#, python-format
+#: model_terms:ir.ui.view,arch_db:auth_signup_approval.message_wait_by_approval
 msgid "Thank you for signing up in our site. Your information it's being reviewed by one of our administrators. As soon as your account review is finished, we will email you with instructions on how to activate it."
 msgstr "Gracias por registrarse en nuestro sitio. Su información esta siendo revisada por uno de nuestros administradores. Apenas termine la revisión de su cuenta, recibirá un correo con instrucciones de cómo activarla."
 

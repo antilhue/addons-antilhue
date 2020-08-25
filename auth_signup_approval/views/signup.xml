@@ -13,4 +13,18 @@
             <attribute name="type">email</attribute>
         </xpath>
     </template>
+
+    <template id="message_wait_by_approval" inherit_id="auth_signup.reset_password">
+        <xpath expr="//div[@t-if='message']" position="before">
+            <div t-if="message_signup">
+                <div class="alert alert-success mt-3" t-if="message_signup" role="status">
+                    <p>Thank you for signing up in our site. Your information it's being reviewed by one of our administrators. As soon as your account review is finished, we will email you with instructions on how to activate it.</p>
+                </div>
+                <a href="/web/login" class="btn btn-link float-right" role="button">Back to Login</a>
+            </div>
+        </xpath>
+        <xpath expr="//form[hasclass('oe_reset_password_form')]" position="attributes">
+           <attribute name="t-if">not message and not message_signup</attribute>
+        </xpath>
+    </template>
 </odoo>
