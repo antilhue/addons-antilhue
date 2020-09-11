@@ -1,6 +1,3 @@
-import logging
-import json
-
 import werkzeug
 from odoo import http
 
