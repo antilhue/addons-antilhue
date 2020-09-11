@@ -1,9 +1,6 @@
-# -*- coding: utf-8 -*-
 import logging
 
-
 from odoo import api, fields, models, _
-from odoo.tools.safe_eval import safe_eval
 
 _logger = logging.getLogger(__name__)
 
@@ -11,13 +8,10 @@ _logger = logging.getLogger(__name__)
 class ResUsers(models.Model):
     _inherit = 'res.users'
 
-    state = fields.Selection(
-        selection=[('pending', 'Pending'), ('new', 'Never Connected'),
-                   ('active', 'Confirmed'), ('rejected', 'Rejected')])
+    state = fields.Selection(selection_add=[('pending', 'Pending'), ('new', ), ('active', ), ('rejected', 'Rejected')])
     approval_status = fields.Selection(
         [('pending', 'Pending'), ('approved', 'Approved'), ('rejected', 'Rejected')], default='pending')
 
-    @api.multi
     def _compute_state(self):
         for user in self:
             user.state = 'active' if user.login_date else 'new'
@@ -25,39 +19,36 @@ class ResUsers(models.Model):
                 continue
             user.state = user.approval_status
 
-    @api.multi
     def action_approval(self):
         self.write({'approval_status': 'approved'})
         self.action_reset_password()
 
-    @api.multi
     def action_reject(self):
         self.write({'approval_status': 'rejected'})
+        template = self.env.ref('auth_signup_approval.user_signup_rejected')
         for user in self:
-            template = self.env.ref('auth_signup_approval.user_signup_rejected')
             with self.env.cr.savepoint():
                 template.with_context(
                     lang=user.lang).send_mail(user.id, force_send=True, raise_exception=True)
 
-    @api.multi
     def notify_admin_user_signup(self, values):
-        config = self.env['ir.config_parameter'].sudo()
-        notify_user_id = safe_eval(config.get_param("notify_signup_user_ids", "[]"))
-        if not notify_user_id:
-            return True
-        users = self.browse(notify_user_id)
-        email_to = ','.join(users.mapped("email"))
         template = self.env.ref('auth_signup_approval.user_pending_approval')
-        template.write({'email_to': email_to})
-
         for user in self:
+            notify_user_ids = self.company_id.notify_signup_user_ids
+            if not notify_user_ids:
+                continue
+            email_to = ','.join(notify_user_ids.mapped("email"))
+            template.write({'email_to': email_to})
             url = user.get_url_view_user()
             with self.env.cr.savepoint():
-                template.with_context(
-                    lang=user.company_id.partner_id.lang, url=url, city=values.get('city', ''), country_name=values.get('country_name', '')).send_mail(user.id, force_send=True, raise_exception=True)
+                template.sudo().with_context(
+                    lang=user.company_id.partner_id.lang,
+                    url=url,
+                    city=values.get('city', ''),
+                    country_name=values.get('country_name', '')
+                ).send_mail(user.id, force_send=True, raise_exception=True)
             _logger.info("Notify Sing Up sent for user <%s> to <%s>", user.login, user.email)
 
-    @api.multi
     def get_url_view_user(self):
         self.ensure_one()
         config = self.env['ir.config_parameter'].sudo()
@@ -68,17 +59,15 @@ class ResUsers(models.Model):
 
     @api.model
     def signup(self, values, token=None):
+        geoip = values.pop('geoip', {})
         cr, login, password = super(ResUsers, self).signup(values, token)
         if token:
             return cr, login, password
 
-        users = self.search([('login', '=', login)])
-        if not users:
-            users = self.search([('email', '=', login)])
+        users = self.search(['|', ('login', '=', login), ('email', '=', login)])
         if len(users) != 1:
             raise Exception(_('Notify Sign Up: invalid username or email'))
-
-        users.notify_admin_user_signup(values.get("geoip", {}))
+        users.notify_admin_user_signup(geoip)
 
         return cr, login, password
 

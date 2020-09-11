@@ -1,6 +1,10 @@
 import logging
+import werkzeug
+
 from odoo import _, SUPERUSER_ID
 from odoo.http import request, route
+from odoo.exceptions import UserError
+from odoo.addons.auth_signup.models.res_users import SignupError
 from odoo.addons.auth_signup.controllers.main import AuthSignupHome
 
 
@@ -34,70 +38,51 @@ class SignupVerifyEmail(AuthSignupHome):
 
     @route()
     def web_auth_signup(self, *args, **kw):
-        if (request.params.get("login") and
-                not request.params.get("password")):
-            return self.passwordless_signup(request.params)
-        else:
+        if request.params.get("login") and request.params.get("password"):
             return super(SignupVerifyEmail, self).web_auth_signup(*args, **kw)
+
+        qcontext = self.get_auth_signup_qcontext()
+        if not qcontext.get('token') and not qcontext.get('signup_enabled'):
+            raise werkzeug.exceptions.NotFound()
+
+        if 'error' not in qcontext and request.httprequest.method == 'POST':
+            try:
+                self.do_signup(qcontext)
+                qcontext["message_signup"] = True
+                return request.render("auth_signup.reset_password", qcontext)
+            except UserError as e:
+                qcontext['error'] = e.name or e.value
+            except (SignupError, AssertionError) as e:
+                if request.env["res.users"].sudo().search([("login", "=", qcontext.get("login"))]):
+                    qcontext["error"] = _("Another user is already registered using this email address.")
+                else:
+                    _logger.error("%s", e)
+                    qcontext['error'] = _("Could not create a new account.")
+
+        response = request.render('auth_signup.signup', qcontext)
+        response.headers['X-Frame-Options'] = 'DENY'
+        return response
 
     @staticmethod
     def check_format_email(login):
-        error = ""
         try:
             validate_email(login or "")
-        except EmailSyntaxError as e:
-            error = getattr(
-                e,
-                "message",
-                _("That does not seem to be an email address."),
-            )
-        except EmailUndeliverableError as e:
-            error = str(e)
-        except Exception as e:
-            error = str(e)
-        return error
+        except EmailSyntaxError:
+            raise UserError(_("That does not seem to be an email address."))
+        except (EmailUndeliverableError, Exception) as e:
+            raise UserError(str(e))
 
-    @staticmethod
-    def create_user(values, token, login):
-        sudo_users = (request.env["res.users"]
-                      .with_context(create_user=True).sudo())
+    def do_signup(self, qcontext):
+        self.check_format_email(qcontext.get('login', ''))
+        return super(SignupVerifyEmail, self).do_signup(qcontext)
+
+    def _signup_with_values(self, token, values):
+        values['password'] = values.get('password') or ''
         values.update({'geoip': request.session.get('geoip', {})})
-        try:
-            with request.cr.savepoint():
-                sudo_users.signup(values, token)
-        except Exception as error:
-            # Duplicate key or wrong SMTP settings, probably
-            _logger.exception(error)
-            if request.env["res.users"].sudo().search(
-               [("login", "=", login)]):
-                return _("Another user is already registered using this email"
-                         " address.")
-            # Agnostic message for security
-            return _("Something went wrong, please try again later or"
-                     " contact us.")
-        return False
+        db, login, password = request.env['res.users'].sudo().signup(values, token)
+        request.env.cr.commit()  # as authenticate will use its own cursor we need to commit the current transaction
+        if password:
+            uid = request.session.authenticate(db, login, password)
+            if not uid:
+                raise SignupError(_('Authentication Failed.'))
 
-    def passwordless_signup(self, values):
-        qcontext = self.get_auth_signup_qcontext()
-        login = values.get("login", "")
-        message = self.check_format_email(login) or qcontext.get('error', '')
-        if message:
-            qcontext["error"] = message
-            return request.render("auth_signup.signup", qcontext)
-
-        values["email"] = values.get("email", login)
-        # preserve user lang
-        supported_langs = [lang['code'] for lang in request.env['res.lang'].sudo().search_read([], ['code'])]
-        if request.lang in supported_langs:
-            values['lang'] = request.lang
-        # Remove password
-        values["password"] = ""
-
-        message = self.create_user(values, qcontext.get("token"), login)
-        if message:
-            qcontext["error"] = message
-            return request.render("auth_signup.signup", qcontext)
-
-        qcontext["message_signup"] = True
-
-        return request.render("auth_signup.reset_password", qcontext)

@@ -1,14 +1,14 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* auth_signup_approval
+# 	* auth_signup_approval
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 12.0+e-20200729\n"
+"Project-Id-Version: Odoo Server 13.0+e-20200909\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-25 16:23+0000\n"
-"PO-Revision-Date: 2020-08-25 16:23+0000\n"
-"Last-Translator: <>\n"
+"POT-Creation-Date: 2020-09-11 17:05+0000\n"
+"PO-Revision-Date: 2020-09-11 17:05+0000\n"
+"Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,11 +17,12 @@ msgstr ""
 
 #. module: auth_signup_approval
 #: model:mail.template,body_html:auth_signup_approval.user_pending_approval
-msgid "\n"
+msgid ""
+"\n"
 "<div style=\"padding:0px;width:600px;margin:auto;background: #FFFFFF repeat top /100%;color:#777777\">\n"
 "    <p>Dear,</p>\n"
 "    <p>\n"
-"       The user ${object.name} has requested to sign up on the site. The request is awaiting your approval. <br/>\n"
+"       The user ${object.name} has requested to sign up on the site from ${ctx.get(\"city\", \"\")} - ${ctx.get(\"country_name\", \"\")}. The request is awaiting your approval. <br/>\n"
 "       <a href=${object.get_url_view_user()}>Click here</a> to go to the user config.\n"
 "    </p>\n"
 "    <p>Best regards,</p>\n"
@@ -29,12 +30,13 @@ msgid "\n"
 "<div style=\"padding:0px;width:600px;margin:auto; margin-top: 10px; background: #fff repeat top /100%;color:#777777\">\n"
 "    ${user.signature | safe}\n"
 "</div>"
-msgstr "\n"
+msgstr ""
+"\n"
 "<div style=\"padding:0px;width:600px;margin:auto;background: #FFFFFF repeat top /100%;color:#777777\">\n"
 "    <p>Estimado,</p>\n"
 "    <p>\n"
-"       El usuario ${object.name} ha solicitado resgistrarse en el sitio web. La solicitud esta esperando su aprobación. <br/>\n"
-"       <a href=${object.get_url_view_user()}>Click aquí</a> para ir a la configuracion del usuario.\n"
+"       El usuario ${object.name} ha solicitado resgistrarse en el sitio web desde ${ctx.get(\"city\", \"\")} - ${ctx.get(\"country_name\", \"\")}. La solicitud esta esperando su aprobación. <br/>\n"
+"       <a href=${object.get_url_view_user()}>Clic aquí</a> para ir a la configuracion del usuario.\n"
 "    </p>\n"
 "    <p>Saludos,</p>\n"
 "</div>\n"
@@ -42,9 +44,11 @@ msgstr "\n"
 "    ${user.signature | safe}\n"
 "</div>"
 
+
 #. module: auth_signup_approval
 #: model:mail.template,body_html:auth_signup_approval.user_signup_rejected
-msgid "\n"
+msgid ""
+"\n"
 "<div style=\"padding:0px;width:600px;margin:auto;background: #FFFFFF repeat top /100%;color:#777777\">\n"
 "    <table cellspacing=\"0\" cellpadding=\"0\" style=\"width:600px;border-collapse:collapse;background:inherit;color:inherit\">\n"
 "        <tbody><tr>\n"
@@ -65,7 +69,8 @@ msgid "\n"
 "<div style=\"padding:0px;width:600px;margin:auto; margin-top: 10px; background: #fff repeat top /100%;color:#777777\">\n"
 "    ${user.signature | safe}\n"
 "</div>"
-msgstr "\n"
+msgstr ""
+"\n"
 "<div style=\"padding:0px;width:600px;margin:auto;background: #FFFFFF repeat top /100%;color:#777777\">\n"
 "    <table cellspacing=\"0\" cellpadding=\"0\" style=\"width:600px;border-collapse:collapse;background:inherit;color:inherit\">\n"
 "        <tbody><tr>\n"
@@ -88,10 +93,11 @@ msgstr "\n"
 "</div>"
 
 #. module: auth_signup_approval
-#: code:addons/auth_signup_approval/controllers/main.py:73
+#: code:addons/auth_signup_approval/controllers/main.py:0
 #, python-format
 msgid "Another user is already registered using this email address."
-msgstr "Otro usuario ya está registrado usando esta dirección de correo electrónico."
+msgstr ""
+"Otro usuario ya está registrado usando esta dirección de correo electrónico."
 
 #. module: auth_signup_approval
 #: model:ir.model.fields,field_description:auth_signup_approval.field_res_users__approval_status
@@ -104,9 +110,15 @@ msgid "Approve"
 msgstr "Aprobar"
 
 #. module: auth_signup_approval
-#: selection:res.users,approval_status:0
+#: model:ir.model.fields.selection,name:auth_signup_approval.selection__res_users__approval_status__approved
 msgid "Approved"
 msgstr "Aprobado"
+
+#. module: auth_signup_approval
+#: code:addons/auth_signup_approval/controllers/main.py:0
+#, python-format
+msgid "Authentication Failed."
+msgstr "Autenticación fallida."
 
 #. module: auth_signup_approval
 #: model_terms:ir.ui.view,arch_db:auth_signup_approval.message_wait_by_approval
@@ -114,19 +126,20 @@ msgid "Back to Login"
 msgstr "Volver al Inicio de sesión"
 
 #. module: auth_signup_approval
+#: model:ir.model,name:auth_signup_approval.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: auth_signup_approval
 #: model:ir.model,name:auth_signup_approval.model_res_config_settings
 msgid "Config Settings"
 msgstr "Opciones de Configuración"
 
 #. module: auth_signup_approval
-#: selection:res.users,state:0
-msgid "Confirmed"
-msgstr "Confirmado"
-
-#. module: auth_signup_approval
-#: selection:res.users,state:0
-msgid "Never Connected"
-msgstr "Nunca conectado"
+#: code:addons/auth_signup_approval/controllers/main.py:0
+#, python-format
+msgid "Could not create a new account."
+msgstr "No se ha podido crear una cuenta nueva."
 
 #. module: auth_signup_approval
 #: model:mail.template,subject:auth_signup_approval.user_pending_approval
@@ -134,19 +147,20 @@ msgid "New Auth Signup: ${object.name}"
 msgstr "Nuevo registro: ${object.name}"
 
 #. module: auth_signup_approval
+#: model:ir.model.fields,field_description:auth_signup_approval.field_res_company__notify_signup_user_ids
 #: model:ir.model.fields,field_description:auth_signup_approval.field_res_config_settings__notify_signup_user_ids
 msgid "Notified users when a user sign up"
 msgstr "Usuarios notificados cuando un usuario se registra"
 
 #. module: auth_signup_approval
-#: code:addons/auth_signup_approval/models/res_users.py:79
+#: code:addons/auth_signup_approval/models/res_users.py:0
 #, python-format
 msgid "Notify Sign Up: invalid username or email"
 msgstr "Notificacion de registro: nombre de usuario o email invalido"
 
 #. module: auth_signup_approval
-#: selection:res.users,approval_status:0
-#: selection:res.users,state:0
+#: model:ir.model.fields.selection,name:auth_signup_approval.selection__res_users__approval_status__pending
+#: model:ir.model.fields.selection,name:auth_signup_approval.selection__res_users__state__pending
 msgid "Pending"
 msgstr "Pendiente"
 
@@ -161,13 +175,13 @@ msgid "Reject"
 msgstr "Rechazar"
 
 #. module: auth_signup_approval
-#: selection:res.users,approval_status:0
-#: selection:res.users,state:0
+#: model:ir.model.fields.selection,name:auth_signup_approval.selection__res_users__approval_status__rejected
+#: model:ir.model.fields.selection,name:auth_signup_approval.selection__res_users__state__rejected
 msgid "Rejected"
 msgstr "Rechazado"
 
 #. module: auth_signup_approval
-#: code:addons/auth_signup_approval/models/res_users.py:93
+#: code:addons/auth_signup_approval/models/res_users.py:0
 #, python-format
 msgid "Reset password: invalid username or email"
 msgstr "Restablecer Contraseña: usuario o correo invalido"
@@ -175,13 +189,8 @@ msgstr "Restablecer Contraseña: usuario o correo invalido"
 #. module: auth_signup_approval
 #: model_terms:ir.ui.view,arch_db:auth_signup_approval.res_config_settings_view_form
 msgid "Send email for these users when a user sign up"
-msgstr "Enviar correo electrónico a estos usuarios cuando un usuario se registre"
-
-#. module: auth_signup_approval
-#: code:addons/auth_signup_approval/controllers/main.py:76
-#, python-format
-msgid "Something went wrong, please try again later or contact us."
-msgstr "Algo ha ido mal, por favor inténtelo de nuevo más tarde o contáctenos."
+msgstr ""
+"Enviar correo electrónico a estos usuarios cuando un usuario se registre"
 
 #. module: auth_signup_approval
 #: model:ir.model.fields,field_description:auth_signup_approval.field_res_users__state
@@ -190,11 +199,17 @@ msgstr "Estado"
 
 #. module: auth_signup_approval
 #: model_terms:ir.ui.view,arch_db:auth_signup_approval.message_wait_by_approval
-msgid "Thank you for signing up in our site. Your information it's being reviewed by one of our administrators. As soon as your account review is finished, we will email you with instructions on how to activate it."
-msgstr "Gracias por registrarse en nuestro sitio. Su información esta siendo revisada por uno de nuestros administradores. Apenas termine la revisión de su cuenta, recibirá un correo con instrucciones de cómo activarla."
+msgid ""
+"Thank you for signing up in our site. Your information it's being reviewed "
+"by one of our administrators. As soon as your account review is finished, we"
+" will email you with instructions on how to activate it."
+msgstr ""
+"Gracias por registrarse en nuestro sitio. Su información esta siendo "
+"revisada por uno de nuestros administradores. Apenas termine la revisión de "
+"su cuenta, recibirá un correo con instrucciones de cómo activarla."
 
 #. module: auth_signup_approval
-#: code:addons/auth_signup_approval/controllers/main.py:52
+#: code:addons/auth_signup_approval/controllers/main.py:0
 #, python-format
 msgid "That does not seem to be an email address."
 msgstr "Eso no parece una dirección de email válida."
