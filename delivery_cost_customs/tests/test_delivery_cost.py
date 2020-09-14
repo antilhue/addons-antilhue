@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from odoo.tests import common
+from odoo.tests import common, Form
 from odoo.tools import float_compare
 
 class TestDeliveryCustomsCost(common.TransactionCase):
@@ -47,14 +47,17 @@ class TestDeliveryCustomsCost(common.TransactionCase):
         })
 
         # I add delivery cost in Sales order
-        order.get_delivery_price()
-        order.set_delivery_line()
+        delivery_wizard = Form(self.env['choose.delivery.carrier'].with_context({
+            'default_order_id': order.id,
+            'default_carrier_id': self.normal_delivery.id
+        }))
+        choose_delivery_carrier = delivery_wizard.save()
+        choose_delivery_carrier.button_confirm()
 
         # I check sales order after added delivery cost
-
         line = self.SaleOrderLine.search([('order_id', '=', order.id),
-                                          ('product_id', '=',
-                                           order.carrier_id.product_id.id)])
+            ('product_id', '=', self.normal_delivery.product_id.id)])
+
         self.assertEqual(len(line), 1, "Delivery cost is not Added")
 
         self.assertEqual(float_compare(line.price_subtotal, 120.0, precision_digits=2), 0,
