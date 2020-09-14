@@ -23,4 +23,5 @@ class Delivery(models.Model):
             cost = order.company_id.currency_id._convert(
                 self.customs_cost, order.currency_id, order.company_id, date, round=False)
             res['price'] = res['price'] + cost
+            res['carrier_price'] = res['price']
         return res
