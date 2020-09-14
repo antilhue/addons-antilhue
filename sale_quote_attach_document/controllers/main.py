@@ -25,8 +25,8 @@ class CustomerPortal(CustomerPortal):
 
         attachment_value = {
             'name': file.filename,
+            'type': 'binary',
             'datas': base64.encodebytes(file.read()),
-            'datas_fname': file.filename,
             'res_model': 'sale.order',
             'res_id': order_sudo.id,
         }
@@ -34,7 +34,6 @@ class CustomerPortal(CustomerPortal):
 
         values = {
             'no_auto_thread': False,
-            'res_id': order_id,
             'author_id': request.env.user.partner_id.id,
             'partner_ids': order_sudo.user_id.sudo().partner_id.ids
         }
