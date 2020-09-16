@@ -16,7 +16,7 @@ class WebsiteSale(WebsiteSale):
         if not document:
             return request.not_found()
 
-        status, headers, content = request.registry['ir.http'].binary_content(id=document.sudo().attachment_id)
+        status, headers, content = request.env['ir.http'].binary_content(id=document.sudo().attachment_id)
         if status == 304:
             response = werkzeug.wrappers.Response(status=status, headers=headers)
         elif status == 301:
@@ -27,7 +27,7 @@ class WebsiteSale(WebsiteSale):
             content_base64 = base64.b64decode(content)
             headers.append(('Content-Length', len(content_base64)))
             headers.append((
-                'Content-Disposition', "inline; filename*=UTF-8''%s" % document.sudo().attachment_id.datas_fname))
+                'Content-Disposition', "inline; filename*=UTF-8''%s" % document.sudo().attachment_id.name))
             response = request.make_response(content_base64, headers)
 
         return response
