@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 from odoo import api, fields, models, _
-from odoo.addons import decimal_precision as dp
 
 
 class SaleOrder(models.Model):
@@ -8,9 +7,8 @@ class SaleOrder(models.Model):
 
     total_weight = fields.Float(string='Total Weight(kg)', compute='_compute_total_weight')
     total_volumen = fields.Float(string='Total Volumen', compute='_compute_total_volumen',
-                                 digits=dp.get_precision('Volumen'))
+                                 digits='Volumen')
 
-    @api.multi
     @api.depends('order_line', 'order_line.product_uom_qty', 'order_line.product_uom_qty')
     def _compute_total_weight(self):
         for sale in self:
@@ -21,7 +19,6 @@ class SaleOrder(models.Model):
                 continue
             sale.total_weight = sum(sale.order_line.mapped(lambda p: p.weight * p.product_uom_qty))
 
-    @api.multi
     @api.depends('order_line', 'order_line.product_uom_qty', 'order_line.product_id')
     def _compute_total_volumen(self):
         for sale in self:
@@ -40,7 +37,6 @@ class SaleOrderLine(models.Model):
     weight = fields.Float(string='Weight(kg)', related='product_id.weight', readonly=True)
     volumen = fields.Float(string='Volumen(cm3)', compute='_compute_volumen', readonly=True)
 
-    @api.multi
     @api.depends('product_id', 'product_uom_qty')
     def _compute_volumen(self):
         for line in self:

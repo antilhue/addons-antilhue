@@ -1,7 +1,7 @@
 # coding: utf-8
 {
     'name': 'Sales package summary',
-    'version': '12.0.1.0.0',
+    'version': '13.0.1.0.0',
     'summary': 'A summary of the total weight and volume of a sales order',
     'description': "",
     'depends': [
