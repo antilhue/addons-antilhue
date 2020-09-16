@@ -1,7 +1,7 @@
 {
     'name': 'Web Categories without attribute filters',
     'category': 'Website',
-    'version': '12.0.1.0.0',
+    'version': '13.0.1.0.0',
     'depends': ['website_sale'],
     'data': [
         'views/public_categories.xml',
