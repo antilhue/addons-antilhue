@@ -1,6 +1,6 @@
 from odoo import http
 from odoo.http import request
-from odoo import api, fields, models, SUPERUSER_ID, _
+from odoo import SUPERUSER_ID
 from odoo.addons.website_sale.controllers.main import WebsiteSale
 
 
