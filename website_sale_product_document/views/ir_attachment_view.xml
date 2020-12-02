@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_attachment_form_document" model="ir.ui.view">
+        <field name="name">view.attachment.form.document</field>
+        <field name="model">ir.attachment</field>
+        <field name="inherit_id" ref="base.view_attachment_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='description_group']" position="after">
+                <group string="Document Info">
+                    <field name="document_name" label="Document Name"></field>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

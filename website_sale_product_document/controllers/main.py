@@ -27,7 +27,7 @@ class WebsiteSale(WebsiteSale):
             content_base64 = base64.b64decode(content)
             headers.append(('Content-Length', len(content_base64)))
             headers.append((
-                'Content-Disposition', "inline; filename*=UTF-8''%s.pdf" % document.sudo().attachment_id.name))
+                'Content-Disposition', "inline; filename*=UTF-8''%s" % document.sudo().attachment_id.name))
             response = request.make_response(content_base64, headers)
 
         return response

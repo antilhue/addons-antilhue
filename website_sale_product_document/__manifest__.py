@@ -7,6 +7,7 @@
         'security/ir.model.access.csv',
         'views/product_views.xml',
         'views/templates.xml',
+        'views/ir_attachment_view.xml',
     ],
     'demo': [
     ],
