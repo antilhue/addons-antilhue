@@ -3,6 +3,7 @@
 import base64
 from odoo import http
 from odoo.http import request
+from odoo.exceptions import MissingError
 from odoo.addons.website_sale.controllers.main import WebsiteSale
 
 import werkzeug
@@ -11,12 +12,15 @@ import werkzeug
 class WebsiteSale(WebsiteSale):
 
     @http.route(['/product/download/document',], type='http', auth='public')
-    def download_product_document(self, document_id):
-        document = request.env['product.document'].browse(int(document_id))
-        if not document:
+    def download_product_document(self, document_id=False):
+
+        try:
+            document = request.env['product.document'].browse(int(document_id))
+            status, headers, content = request.env['ir.http'].binary_content(
+                id=document.sudo().attachment_id)
+        except (MissingError, ValueError):
             return request.not_found()
 
-        status, headers, content = request.env['ir.http'].binary_content(id=document.sudo().attachment_id)
         if status == 304:
             response = werkzeug.wrappers.Response(status=status, headers=headers)
         elif status == 301:
