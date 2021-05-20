@@ -20,6 +20,14 @@ def migrate(cr, version):
         partners = env['res.partner'].search([("state_id", "=", state.get('id'))])
         if not partners:
             continue
-        region = env['res.country.state'].search([("name", "=", state.get('name')), ("code", "not like", "CL")])
+        region = env['res.country.state'].search(
+            [("name", "=", state.get('name')), ("code", "not like", "CL")], limit=1)
         partners.write({"state_id": region.id})
+
+        cities = env['res.city'].search([("state_id", "=", state.get("id"))])
+        if not cities:
+            continue
+        cities.write({"state_id": region.id})
+
+
 
