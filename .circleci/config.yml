@@ -7,7 +7,7 @@ jobs:
 
     # Primary container image where all commands run
 
-      - image: antilhuecom/odoo-base:13.0
+      - image: antilhuecom/odoo-base:14.0
         environment:
           DB_HOST: 127.0.0.1
           DATABASE: odoo
@@ -47,4 +47,4 @@ jobs:
             odoo -d odoo --db_host $DB_HOST -r $USER --addons-path=$ADDONS_PATH -u  $MODULE_TEST --test-enable --log-level=test --stop-after-init
           environment:
             ADDONS_PATH: "~/addons"
-            MODULE_TEST: "auth_signup_approval,aws_monitoring,delivery_cost_customs,l10n_cl_dpa,sale_quote_attach_document,sales_package_summary,website_sale_hide_attributes_category,website_sale_phone_validation,website_sale_product_document,website_sale_quote"
+            MODULE_TEST: "aws_monitoring"
