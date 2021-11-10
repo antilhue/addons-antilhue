@@ -19,7 +19,6 @@
 <div style="padding:0px;width:600px;margin:auto; margin-top: 10px; background: #fff repeat top /100%;color:#777777">
     ${user.signature | safe}
 </div>]]></field>
-            <field name="user_signature" eval="False"/>
         </record>
 
         <record id="user_signup_rejected" model="mail.template">
@@ -49,7 +48,6 @@
 <div style="padding:0px;width:600px;margin:auto; margin-top: 10px; background: #fff repeat top /100%;color:#777777">
     ${user.signature | safe}
 </div>]]></field>
-            <field name="user_signature" eval="False"/>
         </record>
     </data>
 </odoo>

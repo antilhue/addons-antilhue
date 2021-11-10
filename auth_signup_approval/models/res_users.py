@@ -8,7 +8,9 @@ _logger = logging.getLogger(__name__)
 class ResUsers(models.Model):
     _inherit = 'res.users'
 
-    state = fields.Selection(selection_add=[('pending', 'Pending'), ('new', ), ('active', ), ('rejected', 'Rejected')])
+    state = fields.Selection(
+        selection_add=[('pending', 'Pending'), ('rejected', 'Rejected')],
+        ondelete={'pending': lambda u: u.write({'state': 'new'}), 'rejected': lambda u: u.write({'state': 'new'})})
     approval_status = fields.Selection(
         [('pending', 'Pending'), ('approved', 'Approved'), ('rejected', 'Rejected')], default='pending')
 
