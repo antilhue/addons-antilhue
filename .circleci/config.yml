@@ -47,4 +47,4 @@ jobs:
             odoo -d odoo --db_host $DB_HOST -r $USER --addons-path=$ADDONS_PATH -u  $MODULE_TEST --test-enable --log-level=test --stop-after-init
           environment:
             ADDONS_PATH: "~/addons"
-            MODULE_TEST: "aws_monitoring,auth_signup_approval"
+            MODULE_TEST: "aws_monitoring,auth_signup_approval,delivery_cost_customs"
