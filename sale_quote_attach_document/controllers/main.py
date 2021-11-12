@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 import base64
 import werkzeug
 from odoo import exceptions, fields, http, _
@@ -32,14 +31,19 @@ class CustomerPortal(CustomerPortal):
         }
         attachment_id = request.env['ir.attachment'].sudo().create(attachment_value)
 
+        author_id = request.env.user.partner_id.id
+        if request.env.user._is_public() or not author_id:
+            author_id = order_sudo.partner_id.id
+
         values = {
             'no_auto_thread': False,
-            'author_id': request.env.user.partner_id.id,
+            'author_id': author_id,
             'partner_ids': order_sudo.user_id.sudo().partner_id.ids
         }
         order_sudo.with_context(mail_create_nosubscribe=True).message_post(
             body=_("<p> Reference:  %s </p> <p> %s </p>") % (reference, message),
             attachment_ids=[attachment_id.id],
-            subtype=request.env.ref('mail.mt_comment'),
+            subtype_xmlid='mail.mt_comment',
             message_type='comment', **values)
+
         return werkzeug.utils.redirect(order_sudo.get_portal_url(query_string='&message=attach_ok'))

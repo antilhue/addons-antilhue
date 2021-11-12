@@ -4,7 +4,7 @@
     'category': 'Localization/Chile',
     "summary": 'Chilean administrative division',
     "author": 'maitaoriana',
-    "version": '13.0.1.1.0',
+    "version": '14.0.1.1.0',
     "depends": ['base_address_city'],
     "license": "LGPL-3",
     "data": [
