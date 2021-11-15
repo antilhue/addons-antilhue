@@ -16,7 +16,8 @@ class WebsiteSaleQuote(WebsiteSale):
         if email_act and email_act.get('context'):
             email_ctx = email_act.get('context', {})
             order.with_context(email_ctx).message_post_with_template(
-                email_ctx.get('default_template_id'),composition_mode='comment',
+                email_ctx.get('default_template_id'),
+                composition_mode='comment',
                 email_layout_xmlid="mail.mail_notification_paynow")
             request.website.sale_reset()
             return request.redirect(order.get_portal_url())

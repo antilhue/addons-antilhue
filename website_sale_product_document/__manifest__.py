@@ -1,7 +1,7 @@
 {
     'name': 'Product documents published on the Website',
     'category': 'Website',
-    'version': '13.0.1.0.0',
+    'version': '14.0.1.0.0',
     'depends': ['website_sale'],
     'data': [
         'security/ir.model.access.csv',
